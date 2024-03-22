@@ -1,7 +1,7 @@
 assets:
   tempSubpath: temporary-uploads
   tempVolumeUid: efd6d899-7b71-4318-8402-669e92416168 # System Files
-dateModified: 1708706218
+dateModified: 1711129680
 elementSources:
   craft\elements\Asset:
     -
@@ -251,15 +251,6 @@ meta:
     eb230d0c-f88a-40de-a743-994de14eb8f8: Style # Style
     efd6d899-7b71-4318-8402-669e92416168: 'System Files' # System Files
     fcf21393-86a6-4f40-8a9a-3c829a2316a1: Default # Default
-plugins:
-  cp-css:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.0.0
-    settings:
-      additionalCss: "/* Set link color back to V3, increase contrast */\r\n:root {\r\n    --text-color: var(--gray-800);\r\n    --medium-dark-text-color: var(--gray-700);\r\n    --link-color: #0c4a6e;\r\n}\r\n\r\n/* Increase font size */\r\n\r\nhtml, body {\r\n    font-size: 16px !important;\r\n}\r\n\r\ninput.text, textarea.text, .text > input, .text > textarea, table.editable textarea, .selectize-text > .selectize-control > .selectize-input {\r\n    font-size: 16px !important;\r\n}\r\n\r\nh2 {\r\n    font-size: 18px !important;\r\n}\r\n\r\n/* We are not at a funeral */\r\n#global-sidebar {\r\n    background-color: #0c4a6e !important;\r\n}\r\n\r\n\r\n#sidebar .heading > span {\r\n\r\n    font-size: 14px;\r\n}\r\n\r\n\r\n/* 4.2 toasts */\r\n#notifications [data-type=\"error\"] {\r\n    background-color: #D61F2B;\r\n    color: white;\r\n}\r\n\r\n#notifications [data-type=\"success\"] {\r\n    background-color: #2C5F2D;\r\n    color: white;\r\n}\r\n\r\n#notifications [data-type=\"notice\"] {\r\n    background-color: #2C5F2D;\r\n    color: white;\r\n}\r\n\r\n#notifications .notification .notification-icon {\r\n    color: white;\r\n}\r\nbody.ltr #notifications {\r\n    bottom: initial;\r\n    top: 8px;\r\n    left: 50%;\r\n    transform: translateX(-50%);\r\n}\r\n#notifications .notification-details {\r\n    background-color: white;\r\n    padding: 4px;\r\n}\r\n\r\n/* Hide deprecated element types */\r\n\r\nul.icons a[href*='/admin/settings/globals'] {\r\n    display: none !important;\r\n}\r\n\r\nul.icons a[href*='/admin/settings/categories'] {\r\n    display: none !important;\r\n}\r\n\r\nul.icons a[href*='/admin/settings/tags'] {\r\n    display: none !important;\r\n}"
-      cacheBusting: true
-      cssFile: ''
 system:
   edition: solo
   live: true
