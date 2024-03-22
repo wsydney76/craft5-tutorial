@@ -1,7 +1,22 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 05069f41-81bc-4395-b1dd-a4ba9ce0d878 # Search
+  - 7035f447-3559-4542-9f1d-2b71bbc7a15a # Topic Index
+  - 0e989e8d-658a-4a1e-acf5-edb2387959ab # Post Index
+  - 19a49103-3b3e-48c0-955b-996599d8c651 # Default Page
 handle: page
+maxAuthors: 1
 name: Page
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   2393c71c-94e8-4e90-bb19-949696b8be0b: # English

@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: featuredImage
-instructions: 'At least 768px wide'
-name: 'Featured Image'
+handle: image
+instructions: 'At least 768px wide. For best result, use 1000px min. if the wide style is used.'
+name: Image
 searchable: false
 settings:
   allowSelfRelations: false
@@ -11,7 +11,7 @@ settings:
     - image
   branchLimit: null
   defaultUploadLocationSource: 'volume:c9a4fbad-6ca0-4e20-ba72-da2c14a38190' # Images
-  defaultUploadLocationSubpath: featured
+  defaultUploadLocationSubpath: null
   localizeRelations: false
   maintainHierarchy: false
   maxRelations: 1
@@ -43,7 +43,7 @@ settings:
                 - craft\elements\conditions\assets\WidthConditionRule
               -
                 - uid
-                - 226805ac-3aea-4362-8bdc-7ddd00eab414
+                - 73c6baec-2203-47fa-bee7-633be75c6120
               -
                 - operator
                 - '>='
@@ -54,15 +54,15 @@ settings:
                 - maxValue
                 - ''
   selectionLabel: 'Select an image'
-  showCardsInGrid: false
+  showCardsInGrid: true
   showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources:
     - 'volume:c9a4fbad-6ca0-4e20-ba72-da2c14a38190' # Images
   targetSiteId: null
-  validateRelatedElements: true
-  viewMode: large
+  validateRelatedElements: false
+  viewMode: cards
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Assets

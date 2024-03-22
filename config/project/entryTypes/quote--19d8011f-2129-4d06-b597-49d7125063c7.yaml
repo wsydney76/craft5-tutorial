@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  7401d309-e508-45cd-b5e8-a48f92283981:
+  0a8eb920-774e-4467-b009-325d6a5b47a6:
     tabs:
       -
         elementCondition: null
@@ -30,51 +30,72 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 4a31dadb-3ebe-4829-8236-2bfce7d72b5e
+            uid: c79a815d-fcf3-4b68-ba88-5dc03342397b
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 1d65442c-c0b9-46f4-8518-9a6c53e21bc1 # Featured Image
-            handle: null
-            includeInCards: false
+            fieldUid: 86b9888e-ef59-4f68-8ece-9b7badf30277 # Multiline Text
+            handle: text
+            includeInCards: true
             instructions: null
-            label: null
-            providesThumbs: true
-            required: false
+            label: Text
+            providesThumbs: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 6000495f-d20c-4d59-adac-23d09575d4f0
+            uid: b4fa8163-564d-4a5f-bdf3-92c501282fad
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 95f98672-9562-44a0-8639-92d2b55ceeb6 # Body Content
-            handle: null
+            fieldUid: f37b0bab-9cb9-4695-b431-f05d5e3bd8da # Single Line Text
+            handle: cite
             includeInCards: false
             instructions: null
-            label: null
+            label: Cite
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0442fdbb-7778-4e08-8d02-e35a73e9e416
+            uid: 57d602e9-ba50-41dd-a31b-634f9a7872b6
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 6aacb145-186e-49b1-9bd2-baaa3327a8ba
+        uid: 756bc6cb-dc8c-4411-a1ce-c980d292105f
         userCondition: null
-handle: home
-hasTitleField: true
-icon: house
-name: Home
-showSlugField: true
-showStatusField: true
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: eb230d0c-f88a-40de-a743-994de14eb8f8 # Style
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Style
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 867dfbcf-588a-435f-8dbd-b31e4d4a9347
+            userCondition: null
+            warning: null
+            width: 25
+        name: Style
+        uid: 041dd0f5-7771-4f70-bef2-b7d262683df7
+        userCondition: null
+handle: quote
+hasTitleField: false
+icon: quote-right
+name: Quote
+showSlugField: false
+showStatusField: false
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: '{section.name|raw}'
+titleFormat: null
 titleTranslationKeyFormat: null
-titleTranslationMethod: language
+titleTranslationMethod: site

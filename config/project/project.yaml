@@ -1,7 +1,7 @@
 assets:
   tempSubpath: temporary-uploads
   tempVolumeUid: efd6d899-7b71-4318-8402-669e92416168 # System Files
-dateModified: 1711129680
+dateModified: 1711134432
 elementSources:
   craft\elements\Asset:
     -
@@ -15,8 +15,8 @@ elementSources:
       key: 'volume:c9a4fbad-6ca0-4e20-ba72-da2c14a38190' # Images
       tableAttributes:
         - imageSize
-        - 'field:a73e7c96-e9d2-4751-bf01-8a6baf5f3c46' # Alt Text
-        - 'field:560e7c36-f763-440f-b9b5-1d87228bc6df' # Copyright
+        - 'field:a73e7c96-e9d2-4751-bf01-8a6baf5f3c46'
+        - 'field:560e7c36-f763-440f-b9b5-1d87228bc6df' # Untranslatable Short Text
         - dateModified
         - link
       type: native
@@ -42,7 +42,7 @@ elementSources:
         conditionRules:
           -
             class: craft\fields\conditions\TextFieldConditionRule
-            fieldUid: a73e7c96-e9d2-4751-bf01-8a6baf5f3c46 # Alt Text
+            fieldUid: a73e7c96-e9d2-4751-bf01-8a6baf5f3c46
             operator: empty
             uid: 3c30e8ff-c879-49ed-a325-235c9a221596
             value: ''
@@ -69,7 +69,7 @@ elementSources:
         conditionRules:
           -
             class: craft\fields\conditions\TextFieldConditionRule
-            fieldUid: 560e7c36-f763-440f-b9b5-1d87228bc6df # Copyright
+            fieldUid: 560e7c36-f763-440f-b9b5-1d87228bc6df # Untranslatable Short Text
             operator: empty
             uid: 4ba2301e-60c6-4520-8136-f56e1896da40
             value: ''
@@ -81,7 +81,7 @@ elementSources:
       key: 'custom:f0e81598-0477-447a-b0cd-7adb621ad4c3'
       label: 'Missing copyright'
       tableAttributes:
-        - 'field:a73e7c96-e9d2-4751-bf01-8a6baf5f3c46' # Alt Text
+        - 'field:a73e7c96-e9d2-4751-bf01-8a6baf5f3c46'
         - imageSize
         - location
       type: custom
@@ -147,7 +147,6 @@ elementSources:
       key: 'section:5f021491-7c29-4320-be70-454d594268af' # Page
       tableAttributes:
         - type
-        - 'field:1d65442c-c0b9-46f4-8518-9a6c53e21bc1' # Featured Image
         - drafts
         - postDate
         - link
@@ -159,7 +158,6 @@ elementSources:
       disabled: false
       key: 'section:585f70b2-f84a-47ff-ad71-3faff9698ba9' # Post
       tableAttributes:
-        - 'field:1d65442c-c0b9-46f4-8518-9a6c53e21bc1' # Featured Image
         - 'field:2ac14555-67e9-455b-9337-b07a50478276' # Topics
         - drafts
         - postDate
@@ -219,19 +217,17 @@ meta:
     5f021491-7c29-4320-be70-454d594268af: Page # Page
     8ed4044d-89b6-4d6b-a8a3-e303f533263a: Style # Style
     18e8e721-36cd-4c7a-a02a-44c513fb3cb8: Default # Default
-    19a49103-3b3e-48c0-955b-996599d8c651: Default # Default
+    19a49103-3b3e-48c0-955b-996599d8c651: 'Default Page' # Default Page
     19d8011f-2129-4d06-b597-49d7125063c7: Quote # Quote
     21e8b35e-5b6d-4f11-bc0e-26fcaa107ce8: Home # Home
     63e734ee-d709-488a-bd8d-3a90ab070825: Text # Text
     78ba6fca-0979-4552-a36e-f6f7a001b0f5: Text # Text
     78f9590c-8302-4bbc-8e62-39e3f6a2bd57: Text # Text
-    86dd46cc-bc17-4ccb-adcd-b64065e83bb4: Subheading # Subheading
+    86b9888e-ef59-4f68-8ece-9b7badf30277: 'Multiline Text' # Multiline Text
     95f98672-9562-44a0-8639-92d2b55ceeb6: 'Body Content' # Body Content
-    560e7c36-f763-440f-b9b5-1d87228bc6df: Copyright # Copyright
+    560e7c36-f763-440f-b9b5-1d87228bc6df: 'Untranslatable Short Text' # Untranslatable Short Text
     585f70b2-f84a-47ff-ad71-3faff9698ba9: Post # Post
-    761cddc2-d969-4560-b5de-4bf2a393cb8a: Common # Common
-    817d3d1a-d840-41a0-85a2-898d07aef769: Default # Default
-    0837f34c-eb77-4cca-bded-4b9c2d688a90: 'Site Name' # Site Name
+    817d3d1a-d840-41a0-85a2-898d07aef769: Post # Post
     2393c71c-94e8-4e90-bb19-949696b8be0b: English # English
     05069f41-81bc-4395-b1dd-a4ba9ce0d878: Search # Search
     7035f447-3559-4542-9f1d-2b71bbc7a15a: 'Topic Index' # Topic Index
@@ -240,21 +236,29 @@ meta:
     10877b5b-ab25-4e80-b0c0-74947be617eb: 'Block Type' # Block Type
     a4a0dfdc-289d-4d50-baae-6a3215a85701: Text # Text
     a7f4b9fd-a554-4545-af32-3b57544c9432: 'Site Info - Global Settings' # Site Info - Global Settings
-    a73e7c96-e9d2-4751-bf01-8a6baf5f3c46: 'Alt Text' # Alt Text
     a33610ee-ece8-47a1-949e-94477da5fd4d: Image # Image
     a3605555-7165-4ea9-a338-870db2eba7ca: Heading # Heading
     ab2052c5-b53a-4cbd-b95d-96ea7489c375: Home # Home
     abb455ba-032b-461d-9c8d-dca9ed3fc7bd: Image # Image
     b7acd2cf-9449-4637-a40c-2e266a19cc19: Deutsch # Deutsch
-    bbbea387-f8a6-43f7-ab94-dc572bd0cc77: Site # Site
     c9a4fbad-6ca0-4e20-ba72-da2c14a38190: Images # Images
     eb230d0c-f88a-40de-a743-994de14eb8f8: Style # Style
     efd6d899-7b71-4318-8402-669e92416168: 'System Files' # System Files
-    fcf21393-86a6-4f40-8a9a-3c829a2316a1: Default # Default
+    f37b0bab-9cb9-4695-b431-f05d5e3bd8da: 'Single Line Text' # Single Line Text
+    fcf21393-86a6-4f40-8a9a-3c829a2316a1: Topic # Topic
+plugins:
+  cp-css:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+    settings:
+      additionalCss: "/* Increase font size */\r\n\r\nhtml, body {\r\n    font-size: 15px;\r\n}\r\n\r\n.titlebar {\r\n    --gray-050: var(--gray-100);\r\n    --red-050: var(--red-100);\r\n    --orange-050: var(--orange-100);\r\n    --amber-050: var(--amber-100);\r\n    --yellow-050: var(--yellow-100);\r\n    --lime-050: var(--lime-100);\r\n    --green-050: var(--green-100);\r\n    --emerald-050: var(--emerald-100);\r\n    --teal-050: var(--teal-100);\r\n    --cyan-050: var(--cyan-100);\r\n    --sky-050: var(--sky-100);\r\n    --blue-050: var(--blue-100);\r\n    --indigo-050: var(--indigo-100);\r\n    --violet-050: var(--violet-100);\r\n    --purple-050: var(--purple-100);\r\n    --fuchsia-050: var(--fuchsia-100);\r\n    --pink-050: var(--pink-100);\r\n    --rose-050: var(--rose-100);\r\n\r\n}\r\n\r\n/*.fields .element-index .toolbar > div, .fields .element-index .footer  {\r\n    display: none;\r\n}*/\r\n\r\n/* Set link color back to V3, increase contrast\r\n:root {\r\n    --text-color: var(--gray-800);\r\n    --medium-dark-text-color: var(--gray-700);\r\n    --link-color: #0c4a6e;\r\n    --red-050: #fecaca;\r\n    --max-width: 1700px;\r\n}\r\n*/\r\n\r\n\r\ninput.text, textarea.text, .text > input, .text > textarea, table.editable textarea, .selectize-text > .selectize-control > .selectize-input {\r\n    font-size: 16px;\r\n}\r\n\r\n#crumbs {\r\n    font-size: 15px;\r\n    font-weight: 500;\r\n}\r\n\r\n.crumb {\r\n    padding-top: 4px;\r\n}\r\n\r\n.context-label, .context-menu-container {\r\n    font-size: 15px;\r\n    font-weight: 500;\r\n    margin-top: 4px;\r\n    background-color: #E4EDF6;\r\n}\r\n\r\nh2 {\r\n    font-size: 18px;\r\n}\r\n\r\n#content-container h2 {\r\n    border-color: var(--gray-400);\r\n    font-size: 20px;\r\n\r\n}\r\n\r\n#content-container .error-summary h2 {\r\n    font-size: 16px;\r\n}\r\n\r\n.readable blockquote.note.tip {\r\n    color: var(--blue-800);\r\n    border-color: var(--blue-800);\r\n}\r\n\r\n.readable blockquote.note.tip:before {\r\n    color: var(--blue-800);\r\n}\r\n\r\n/* TODO: without this, there is a vertical shift in 4.5\r\n#global-header {\r\n    min-height: 50px;\r\n}\r\n*/\r\n\r\n/*#global-sidebar {\r\n    background-color: var(--gray-100) !important;\r\n}*/\r\n\r\n/*\r\n#global-sidebar .nav-item:hover, #sidebar-trigger:hover {\r\n    color: black;\r\n}\r\n*/\r\n\r\n\r\n/* 4.2 toasts */\r\n#notifications [data-type=\"error\"] {\r\n    background-color: #D61F2B;\r\n    color: white;\r\n}\r\n\r\n#notifications [data-type=\"success\"] {\r\n    background-color: #16a34a;\r\n    color: white;\r\n}\r\n\r\n#notifications [data-type=\"notice\"] {\r\n    background-color: #2C5F2D;\r\n    color: white;\r\n}\r\n\r\n#notifications .notification .notification-icon {\r\n    color: white;\r\n}\r\n\r\nbody.ltr #notifications {\r\n    bottom: initial;\r\n    top: 8px;\r\n    left: 50%;\r\n    transform: translateX(-50%);\r\n}\r\n\r\n#notifications .notification-details {\r\n    background-color: white;\r\n    padding: 4px;\r\n}\r\n\r\n#notifications [data-type=\"success\"] .notification-details {\r\n    background-color: #f0fdf4;\r\n    padding: 4px;\r\n}\r\n\r\n/* .content-pane, .matrixblock {\r\n    background-color: #fbfbff;\r\n}*/\r\n\r\n.icons a[href*=\"/admin/settings/globals\"],\r\n.icons a[href*=\"/admin/settings/categories\"],\r\n.icons a[href*=\"/admin/settings/tags\"] {\r\n    display: none;\r\n}"
+      cacheBusting: true
+      cssFile: ''
 system:
   edition: solo
   live: true
   name: $SYSTEM_NAME
   retryDuration: null
-  schemaVersion: 4.5.3.0
+  schemaVersion: 5.0.0.20
   timeZone: Europe/Berlin

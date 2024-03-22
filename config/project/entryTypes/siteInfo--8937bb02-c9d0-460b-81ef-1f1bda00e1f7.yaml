@@ -1,3 +1,4 @@
+color: null
 fieldLayouts:
   bde6c865-48ee-4415-9ac7-2ef82c0b9b2f:
     tabs:
@@ -12,6 +13,7 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -20,6 +22,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -33,21 +36,27 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 0837f34c-eb77-4cca-bded-4b9c2d688a90 # Site Name
+            fieldUid: 560e7c36-f763-440f-b9b5-1d87228bc6df # Untranslatable Short Text
+            handle: siteName
+            includeInCards: false
             instructions: null
-            label: null
+            label: 'Site Name'
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b371723f-8ccc-4454-b211-37d094110d75
+            uid: 31750ba7-c9dc-4f0d-bacf-bb6271e4fcec
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 560e7c36-f763-440f-b9b5-1d87228bc6df # Copyright
+            fieldUid: 560e7c36-f763-440f-b9b5-1d87228bc6df # Untranslatable Short Text
+            handle: copyright
+            includeInCards: true
             instructions: null
-            label: null
+            label: Copyright
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -58,8 +67,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 1d65442c-c0b9-46f4-8518-9a6c53e21bc1 # Featured Image
+            handle: null
+            includeInCards: false
             instructions: null
             label: 'Default Featured Image'
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -72,12 +84,12 @@ fieldLayouts:
         userCondition: null
 handle: siteInfo
 hasTitleField: false
+icon: gear
 name: 'Site Info - Global Settings'
-section: a7f4b9fd-a554-4545-af32-3b57544c9432 # Site Info - Global Settings
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

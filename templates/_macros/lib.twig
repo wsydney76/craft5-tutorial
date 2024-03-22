@@ -30,7 +30,7 @@ However, images should always be output via a macro and not by using 'image.img(
     {% set attr = config.attr ?? {loading: 'lazy'} %}
 
     {# Merge in alt text #}
-    {% set attr = attr | merge({alt: image.altText ?: image.title}) %}
+    {% set attr = attr | merge({alt: image.alt ?: image.title}) %}
 
     {# Finally... #}
     {{ image.img(transform, srcset)|attr(attr) }}

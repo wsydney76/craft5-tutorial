@@ -1,0 +1,32 @@
+columnSuffix: uoxadpzo
+handle: imageStyle
+instructions: null
+name: 'Image Style'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Wide
+        -
+          - value
+          - wide
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Full Height'
+        -
+          - value
+          - fullHeight
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Checkboxes

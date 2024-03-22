@@ -1,3 +1,5 @@
+altTranslationKeyFormat: null
+altTranslationMethod: site
 fieldLayouts:
   a9d58556-baca-4c30-916a-bef0d1ee1f14:
     tabs:
@@ -12,6 +14,7 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -20,6 +23,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -32,22 +36,38 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            attribute: alt
+            class: null
+            cols: null
+            disabled: false
             elementCondition: null
-            fieldUid: a73e7c96-e9d2-4751-bf01-8a6baf5f3c46 # Alt Text
+            id: null
+            includeInCards: true
             instructions: null
             label: null
-            required: true
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
             tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 64372242-c3cf-4a77-b3b3-90704f40d841
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: e4045d2e-d485-4bc3-8f3f-170aab9924a2
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 560e7c36-f763-440f-b9b5-1d87228bc6df # Copyright
+            fieldUid: 560e7c36-f763-440f-b9b5-1d87228bc6df # Untranslatable Short Text
+            handle: copyright
+            includeInCards: true
             instructions: null
-            label: null
+            label: Copyright
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -69,6 +89,7 @@ fs: imagesFs
 handle: images
 name: Images
 sortOrder: 1
+subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: language
 transformFs: internalFs

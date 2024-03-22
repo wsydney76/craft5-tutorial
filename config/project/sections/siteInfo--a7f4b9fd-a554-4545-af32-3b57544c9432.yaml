@@ -1,6 +1,9 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 8937bb02-c9d0-460b-81ef-1f1bda00e1f7 # Site Info - Global Settings
 handle: siteInfo
+maxAuthors: 1
 name: 'Site Info - Global Settings'
 propagationMethod: all
 siteSettings:

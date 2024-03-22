@@ -3,8 +3,9 @@
 {% from '_macros/lib.twig' import img %}
 
 {% set image = block.image.one %}
-{% set wide = block.style.contains('wide') %}
-{% set fullHeight = block.style.contains('fullHeight')%}
+
+{% set wide = block.imageStyle.contains('wide') %}
+{% set fullHeight = block.imageStyle.contains('fullHeight')%}
 
 {% if image %}
     {# Apply negative margin for images with 'wide' style on larger screens #}

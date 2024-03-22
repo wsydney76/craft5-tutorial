@@ -1,15 +1,12 @@
 columnSuffix: gsucoquh
-contentColumnType: string(120)
-fieldGroup: bbbea387-f8a6-43f7-ab94-dc572bd0cc77 # Site
-handle: copyright
+handle: untranslatableShortText
 instructions: null
-name: Copyright
+name: 'Untranslatable Short Text'
 searchable: false
 settings:
   byteLimit: null
   charLimit: 30
   code: false
-  columnType: null
   initialRows: 4
   multiline: false
   placeholder: null

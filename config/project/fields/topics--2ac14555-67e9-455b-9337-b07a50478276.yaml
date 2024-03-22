@@ -1,10 +1,8 @@
 columnSuffix: null
-contentColumnType: string
-fieldGroup: 761cddc2-d969-4560-b5de-4bf2a393cb8a # Common
 handle: topics
 instructions: null
 name: Topics
-searchable: false
+searchable: true
 settings:
   allowSelfRelations: false
   branchLimit: null
@@ -13,12 +11,13 @@ settings:
   maxRelations: null
   minRelations: null
   selectionLabel: null
+  showCardsInGrid: false
   showSiteMenu: false
   sources:
     - 'section:4e30878f-1e26-4e1b-9ced-b3cd32686df9' # Topic
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: null
+  viewMode: list
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Entries

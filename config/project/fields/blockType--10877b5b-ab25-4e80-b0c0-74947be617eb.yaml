@@ -1,0 +1,32 @@
+columnSuffix: wekoroov
+handle: blockType
+instructions: null
+name: 'Block Type'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Table of Contents'
+        -
+          - value
+          - tableOfContents
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'AI Warning'
+        -
+          - value
+          - aiWarning
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

@@ -1,7 +1,19 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 817d3d1a-d840-41a0-85a2-898d07aef769 # Post
 handle: post
+maxAuthors: 1
 name: Post
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   2393c71c-94e8-4e90-bb19-949696b8be0b: # English

@@ -1,3 +1,4 @@
+color: null
 fieldLayouts:
   d92b1752-849b-432e-af14-8b25ede83f1e:
     tabs:
@@ -12,6 +13,7 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -20,6 +22,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -44,12 +47,12 @@ fieldLayouts:
         userCondition: null
 handle: search
 hasTitleField: true
+icon: magnifying-glass
 name: Search
-section: 5f021491-7c29-4320-be70-454d594268af # Page
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: language
-sortOrder: 5
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: language

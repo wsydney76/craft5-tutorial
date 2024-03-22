@@ -1,5 +1,6 @@
+color: null
 fieldLayouts:
-  c52db41b-4b4c-4a3b-8461-51c077a891c2:
+  6e414421-9c51-4c18-ae15-b858843720ed:
     tabs:
       -
         elementCondition: null
@@ -12,6 +13,7 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -20,6 +22,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -27,28 +30,36 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 99f3bd93-4f00-4211-97a6-3a55e6737b18
+            uid: aa92f6bc-6f7a-4a15-b60c-3a82cb0b15a4
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            template: _cp/related-entries
-            type: craft\fieldlayoutelements\Template
-            uid: 4bef2a63-0220-47bb-ace3-24018bba6227
+            fieldUid: 86b9888e-ef59-4f68-8ece-9b7badf30277 # Multiline Text
+            handle: text
+            includeInCards: true
+            instructions: null
+            label: Text
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 93d9ef91-67bb-4ce6-b86b-d446e05d5b85
             userCondition: null
+            warning: null
             width: 100
         name: Content
-        uid: 64c79e4b-d52e-4b8f-901e-1ea7ec1149d0
+        uid: cb85e172-be3d-443c-8def-36bee1a8c4a6
         userCondition: null
-handle: default
-hasTitleField: true
-name: Default
-section: 4e30878f-1e26-4e1b-9ced-b3cd32686df9 # Topic
-showStatusField: true
+handle: text
+hasTitleField: false
+icon: paragraph
+name: Text
+showSlugField: false
+showStatusField: false
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
-titleTranslationMethod: language
+titleTranslationMethod: site

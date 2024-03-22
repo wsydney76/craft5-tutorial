@@ -1,10 +1,17 @@
 color: null
 fieldLayouts:
-  7401d309-e508-45cd-b5e8-a48f92283981:
+  e3e14fe2-2ad5-4293-98c3-dc21e4272700:
     tabs:
       -
         elementCondition: null
         elements:
+          -
+            elementCondition: null
+            template: _cp/drafts
+            type: craft\fieldlayoutelements\Template
+            uid: d19755e0-eb25-4af4-9dd1-cbf29a2eeb68
+            userCondition: null
+            width: 100
           -
             autocapitalize: true
             autocomplete: false
@@ -30,7 +37,22 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 4a31dadb-3ebe-4829-8236-2bfce7d72b5e
+            uid: 174bd17b-9d69-405c-b8b0-5d1bf6df167a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f37b0bab-9cb9-4695-b431-f05d5e3bd8da # Single Line Text
+            handle: subheading
+            includeInCards: true
+            instructions: null
+            label: Subheading
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1531a738-286f-4853-91dd-d0b677d6b9d1
             userCondition: null
             warning: null
             width: 100
@@ -42,16 +64,16 @@ fieldLayouts:
             instructions: null
             label: null
             providesThumbs: true
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 6000495f-d20c-4d59-adac-23d09575d4f0
+            uid: 0bcdc5e3-aee1-418c-baf7-4913c1a9da66
             userCondition: null
             warning: null
-            width: 100
+            width: 25
           -
             elementCondition: null
-            fieldUid: 95f98672-9562-44a0-8639-92d2b55ceeb6 # Body Content
+            fieldUid: 2ac14555-67e9-455b-9337-b07a50478276 # Topics
             handle: null
             includeInCards: false
             instructions: null
@@ -60,21 +82,36 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0442fdbb-7778-4e08-8d02-e35a73e9e416
+            uid: 30b48803-aeeb-45e5-bc65-dc3d7c08f223
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 95f98672-9562-44a0-8639-92d2b55ceeb6 # Body Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ed5bf3fe-47cf-4f2e-bfa1-80966b3e0ac2
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 6aacb145-186e-49b1-9bd2-baaa3327a8ba
+        uid: 547c5e84-0a14-4cb1-8567-8b569135baef
         userCondition: null
-handle: home
+handle: post
 hasTitleField: true
-icon: house
-name: Home
+icon: file
+name: Post
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: '{section.name|raw}'
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: language

@@ -35,10 +35,10 @@
                 <tr>
                     <td>
                         <span class="status {{ entry.status }}"></span>
-                        <a href="{{ entry.cpEditUrl }}">{{ entry.title }}</a>
+                        <a href="{{ entry.cpEditUrl }}">{{ entry.title ?? "Entry #{entry.id} (#{entry.type.name})" }}</a>
                     </td>
                     <td>
-                        {{ entry.section.name|t }}
+                        {{ (entry.section.name ?? entry.type.name)|t }}
                     </td>
                     <td>
                         {% if entry.isProvisionalDraft %}
