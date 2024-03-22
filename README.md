@@ -1,4 +1,4 @@
-# Craft 4 Solo - Tutorial
+# Craft 5 Solo - Tutorial
 
 This tutorial/workshop started as a pure Craft CMS starter as provided in the craftcms/craft package with 
 the following additions:
@@ -25,6 +25,13 @@ We then built a extended version of Craft's official tutorial.
 * * Display usage for assets
 * Basic Tailwind CSS setup
 
+## Craft 5 Port
+
+* Upgraded to Craft 5 (beta)
+* Use generic fields and field instances
+* Use icons/cards
+* Updated custom CSS
+
 ## DDEV Installation
 
 * Clone repository
@@ -36,6 +43,8 @@ We then built a extended version of Craft's official tutorial.
 ![Screenshot home page](/screenshot-home.jpg)
 
 ![Screenshot post index page](/screenshot-posts.jpg)
+
+![Screenshot cards](/screenshot-cards.jpg)
 
 ![Screenshot drafts ui element](/screenshot-drafts.jpg)
 

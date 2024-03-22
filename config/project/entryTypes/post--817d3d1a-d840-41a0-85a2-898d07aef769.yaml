@@ -70,7 +70,7 @@ fieldLayouts:
             uid: 0bcdc5e3-aee1-418c-baf7-4913c1a9da66
             userCondition: null
             warning: null
-            width: 25
+            width: 50
           -
             elementCondition: null
             fieldUid: 2ac14555-67e9-455b-9337-b07a50478276 # Topics

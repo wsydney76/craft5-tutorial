@@ -62,7 +62,7 @@ settings:
     - 'volume:c9a4fbad-6ca0-4e20-ba72-da2c14a38190' # Images
   targetSiteId: null
   validateRelatedElements: true
-  viewMode: large
+  viewMode: cards
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Assets
