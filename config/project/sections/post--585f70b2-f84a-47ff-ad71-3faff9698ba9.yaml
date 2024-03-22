@@ -12,8 +12,22 @@ previewTargets:
         - label
         - 'Primary entry page'
       -
+        - refresh
+        - '1'
+      -
         - urlFormat
         - '{url}'
+  -
+    __assoc__:
+      -
+        - label
+        - 'Post index page'
+      -
+        - refresh
+        - '1'
+      -
+        - urlFormat
+        - '{{ craft.entries.type(''postIndex'').siteId(object.siteId).one().url }}'
 propagationMethod: all
 siteSettings:
   2393c71c-94e8-4e90-bb19-949696b8be0b: # English
