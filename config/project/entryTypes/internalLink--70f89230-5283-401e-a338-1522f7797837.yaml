@@ -1,0 +1,80 @@
+color: null
+fieldLayouts:
+  378f9ed4-68a7-448c-a5da-89ba2744624a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 41bd8543-6cd0-4d47-b6c4-032259cf15a6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f058efdf-af3b-4948-9dd7-914ea547cce8 # Entry with URL
+            handle: target
+            includeInCards: true
+            instructions: null
+            label: 'Target Entry'
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e81a2863-c7ba-4887-8798-157aa66533cc
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: f37b0bab-9cb9-4695-b431-f05d5e3bd8da # Single Line Text
+            handle: caption
+            includeInCards: true
+            instructions: null
+            label: Caption
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 43bf8755-7fe2-45a4-933b-9e77069c531b
+            userCondition: null
+            warning: null
+            width: 25
+        name: Content
+        uid: 2fe54563-ee51-47cd-bd23-d4a563ac3d54
+        userCondition: null
+handle: internalLink
+hasTitleField: false
+icon: bullseye-arrow
+name: 'Internal link'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

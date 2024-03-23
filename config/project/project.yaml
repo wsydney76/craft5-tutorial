@@ -1,7 +1,7 @@
 assets:
   tempSubpath: temporary-uploads
   tempVolumeUid: efd6d899-7b71-4318-8402-669e92416168 # System Files
-dateModified: 1711194609
+dateModified: 1711199556
 elementSources:
   craft\elements\Asset:
     -
@@ -210,6 +210,7 @@ meta:
     1eac01fa-9e12-426e-a043-60ae35acf391: Cite # Cite
     2ac14555-67e9-455b-9337-b07a50478276: Topics # Topics
     2be01897-dbaf-4c19-a6d9-db80ada8fc8f: 'Public Schema' # Public Schema
+    2c814539-4e36-4ab4-994c-4b2dac3b2af3: 'External link' # External link
     4b9eed77-fa62-4ecc-9486-744a64f075d4: Caption # Caption
     4e30878f-1e26-4e1b-9ced-b3cd32686df9: Topic # Topic
     5c400efe-2716-4221-a54a-4ebaf6a3c6cb: 'Heading Level' # Heading Level
@@ -220,6 +221,7 @@ meta:
     19d8011f-2129-4d06-b597-49d7125063c7: Quote # Quote
     21e8b35e-5b6d-4f11-bc0e-26fcaa107ce8: Home # Home
     63e734ee-d709-488a-bd8d-3a90ab070825: Text # Text
+    70f89230-5283-401e-a338-1522f7797837: 'Internal link' # Internal link
     78ba6fca-0979-4552-a36e-f6f7a001b0f5: Text # Text
     78f9590c-8302-4bbc-8e62-39e3f6a2bd57: Text # Text
     86b9888e-ef59-4f68-8ece-9b7badf30277: 'Multiline Text' # Multiline Text
@@ -233,6 +235,7 @@ meta:
     8937bb02-c9d0-460b-81ef-1f1bda00e1f7: 'Site Info - Global Settings' # Site Info - Global Settings
     9128a883-c73e-4009-b8d5-7971ce954682: Special # Special
     10877b5b-ab25-4e80-b0c0-74947be617eb: 'Block Type' # Block Type
+    93372f33-2be3-4f89-9466-9ac943a3ea17: Toggle # Toggle
     a4a0dfdc-289d-4d50-baae-6a3215a85701: Text # Text
     a7f4b9fd-a554-4545-af32-3b57544c9432: 'Site Info - Global Settings' # Site Info - Global Settings
     a33610ee-ece8-47a1-949e-94477da5fd4d: Image # Image
@@ -240,10 +243,14 @@ meta:
     ab2052c5-b53a-4cbd-b95d-96ea7489c375: Home # Home
     abb455ba-032b-461d-9c8d-dca9ed3fc7bd: Image # Image
     b7acd2cf-9449-4637-a40c-2e266a19cc19: Deutsch # Deutsch
+    b8b190d9-515e-4173-a718-1c221741d34c: Links # Links
+    c2c572b1-9642-40f2-9fe4-cd14bcd186d3: Links # Links
     c9a4fbad-6ca0-4e20-ba72-da2c14a38190: Images # Images
     eb230d0c-f88a-40de-a743-994de14eb8f8: Style # Style
     efd6d899-7b71-4318-8402-669e92416168: 'System Files' # System Files
+    f058efdf-af3b-4948-9dd7-914ea547cce8: 'Entry with URL' # Entry with URL
     f37b0bab-9cb9-4695-b431-f05d5e3bd8da: 'Single Line Text' # Single Line Text
+    f232290f-f45b-4537-95e4-353f7e6f6301: 'Web Page Url' # Web Page Url
     fcf21393-86a6-4f40-8a9a-3c829a2316a1: Topic # Topic
 plugins:
   cp-css:

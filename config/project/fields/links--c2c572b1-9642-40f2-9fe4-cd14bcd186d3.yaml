@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: links
+instructions: null
+name: Links
+searchable: true
+settings:
+  createButtonLabel: 'New link'
+  entryTypes:
+    - 70f89230-5283-401e-a338-1522f7797837 # Internal link
+    - 2c814539-4e36-4ab4-994c-4b2dac3b2af3 # External link
+  includeTableView: false
+  maxEntries: 4
+  minEntries: 1
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

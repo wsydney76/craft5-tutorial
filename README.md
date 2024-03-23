@@ -33,6 +33,7 @@ We then built a extended version of Craft's official tutorial.
 * Updated custom CSS
 * Use `render()` method for matrix field
 * Use `eagerly()` method for eager loading
+* Added 'Links'  block as an example for nested matrix entries
 
 ## DDEV Installation
 
@@ -42,11 +43,23 @@ We then built a extended version of Craft's official tutorial.
 
 ## Screenshots
 
+### The homepage
+
 ![Screenshot home page](/screenshot-home.jpg)
+
+### The post index page
 
 ![Screenshot post index page](/screenshot-posts.jpg)
 
+### Cards in Control Panel
+
 ![Screenshot cards](/screenshot-cards.jpg)
+
+### Example for matrix in matrix
+
+![Screenshot nested entries](/screenshot-nested.jpg)
+
+### CP UI elements
 
 ![Screenshot drafts ui element](/screenshot-drafts.jpg)
 

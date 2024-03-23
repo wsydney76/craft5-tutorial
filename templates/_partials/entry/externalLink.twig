@@ -1,0 +1,7 @@
+{% include '_partials/button.twig' with {
+    type: 'link',
+    url: entry.externalUrl,
+    caption: entry.caption ?: entry.externalUrl,
+    external: true,
+    openInNewTab: entry.openInNewTab
+} only %}

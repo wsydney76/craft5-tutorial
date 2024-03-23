@@ -11,6 +11,7 @@ settings:
     - 9128a883-c73e-4009-b8d5-7971ce954682 # Special
     - a33610ee-ece8-47a1-949e-94477da5fd4d # Image
     - a3605555-7165-4ea9-a338-870db2eba7ca # Heading
+    - b8b190d9-515e-4173-a718-1c221741d34c # Links
   includeTableView: false
   maxEntries: null
   minEntries: null

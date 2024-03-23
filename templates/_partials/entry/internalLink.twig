@@ -1,0 +1,8 @@
+{% set target = entry.target.one %}
+{% if target %}
+    {% include '_partials/button.twig' with {
+        type: 'link',
+        url: target.url,
+        caption: entry.caption ?: target.title
+    } only %}
+{% endif %}

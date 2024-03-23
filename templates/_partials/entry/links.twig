@@ -1,0 +1,6 @@
+{% set links = entry.links.collect %}
+{% if links.count %}
+    <div class="not-prose space-y-4 md:flex md:flex-wrap md:space-x-4 md:space-y-0">
+        {{ links.render() }}
+    </div>
+{% endif %}

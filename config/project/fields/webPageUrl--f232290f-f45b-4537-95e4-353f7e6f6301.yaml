@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: webPageUrl
+instructions: null
+name: 'Web Page Url'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: language
+type: craft\fields\Url
