@@ -29,6 +29,7 @@ return [
 
     // Control Panel translations
 
+    'Add a topic' => 'Thema hinzufügen',
     'AI Warning' => 'KI-Warnung',
     'At least 768px wide' => 'Mindestens 768px breit',
     'At least 768px wide. For best result, use 1000px min. if the wide style is used.' => 'Mindestens 768px breit. Für das beste Ergebnis mindestens 1000px, wenn der Weit-Stil verwendet wird.',

@@ -10,7 +10,7 @@ settings:
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
-  selectionLabel: null
+  selectionLabel: 'Add a topic'
   showCardsInGrid: false
   showSiteMenu: false
   sources:

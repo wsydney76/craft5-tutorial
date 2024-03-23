@@ -111,7 +111,7 @@ name: Post
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
-slugTranslationMethod: site
+slugTranslationMethod: language
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: language
