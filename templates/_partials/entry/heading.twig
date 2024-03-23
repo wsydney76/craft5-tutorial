@@ -1,0 +1,9 @@
+{# A heading entry. This will always be called within an element styled with Tailwinds prose class,
+so no styling needed here #}
+
+{# @param entry Entry #}
+
+{{ tag(entry.headingLevel.value, {
+    id: entry.text ? entry.text|id : '',
+    text: entry.text
+}) }}

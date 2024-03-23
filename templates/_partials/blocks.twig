@@ -1,24 +1,16 @@
-{# @param query MatrixBlockQuery #}
+{# @param query EntryQuery #}
 
-{% set blocks = query.all %}
+{% set entries = query.collect %}
 
-{# 
+{#
 We might add eager loading for images etc here, 
-however, based on average count of blocks, this may not be significant.
+however, based on average count of entries, this may not be significant.
 Only measuring with real world data will tell.
 #}
 
-{% if blocks %}
-    {# Output content builder blocks with Tailwind typography. #}
+{% if entries.count %}
+    {# Output content builder entries with Tailwind typography. #}
     <div class="my-8 prose prose-lg prose-slate max-w-none hyphens-auto">
-        {% for block in blocks %}
-            <div>
-                {# Call the block template #}
-                {% include "_blocks/#{block.type.handle|kebab}.twig" with {
-                    blocks,
-                    block
-                } only  %}
-            </div>
-        {% endfor %}
+        {{ entries.render({entries}) }}
     </div>
 {% endif %}

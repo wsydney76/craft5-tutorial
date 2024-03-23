@@ -5,10 +5,10 @@ Inside double quotes there is a string interpolation like this: #{expression}
 The kebap filter converts a value into a better suitable filename here, e.g tableOfContents -> table-of-contents
 #}
 
-{# @param block MatrixBlock #}
-{# @param blocks [MatrixBlock] #}
+{# @param entry Entry #}
+{# @param entries [Entry] #}
 
-{% include "_blocks/special/#{block.blockType.value|kebab}.twig" with {
-    blocks,
-    block
+{% include "_partials/entry/special/#{entry.blockType.value|kebab}.twig" with {
+    entries,
+    entry
 } only  %}
