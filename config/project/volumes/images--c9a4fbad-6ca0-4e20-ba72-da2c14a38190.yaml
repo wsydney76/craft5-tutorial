@@ -1,5 +1,5 @@
 altTranslationKeyFormat: null
-altTranslationMethod: site
+altTranslationMethod: language
 fieldLayouts:
   a9d58556-baca-4c30-916a-bef0d1ee1f14:
     tabs:
@@ -92,5 +92,5 @@ sortOrder: 1
 subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: language
-transformFs: internalFs
+transformFs: transformFs
 transformSubpath: images

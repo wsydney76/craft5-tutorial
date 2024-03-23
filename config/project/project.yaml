@@ -1,7 +1,7 @@
 assets:
   tempSubpath: temporary-uploads
-  tempVolumeUid: efd6d899-7b71-4318-8402-669e92416168 # System Files
-dateModified: 1711199556
+  tempVolumeUid: efd6d899-7b71-4318-8402-669e92416168
+dateModified: 1711207188
 elementSources:
   craft\elements\Asset:
     -
@@ -25,7 +25,7 @@ elementSources:
         - dateCreated
         - desc
       disabled: false
-      key: 'volume:efd6d899-7b71-4318-8402-669e92416168' # System Files
+      key: 'volume:efd6d899-7b71-4318-8402-669e92416168'
       tableAttributes:
         - filename
         - kind
@@ -200,9 +200,16 @@ fs:
     hasUrls: true
     name: 'Internal FS'
     settings:
-      path: '@webroot/files'
+      path: '@webroot/internal'
     type: craft\fs\Local
-    url: '@web/files'
+    url: '@web/internal'
+  transformFs:
+    hasUrls: true
+    name: 'Transform FS'
+    settings:
+      path: '@webroot/transforms'
+    type: craft\fs\Local
+    url: '@web/transforms'
 meta:
   __names__:
     0e989e8d-658a-4a1e-acf5-edb2387959ab: 'Post Index' # Post Index
@@ -247,7 +254,6 @@ meta:
     c2c572b1-9642-40f2-9fe4-cd14bcd186d3: Links # Links
     c9a4fbad-6ca0-4e20-ba72-da2c14a38190: Images # Images
     eb230d0c-f88a-40de-a743-994de14eb8f8: Style # Style
-    efd6d899-7b71-4318-8402-669e92416168: 'System Files' # System Files
     f058efdf-af3b-4948-9dd7-914ea547cce8: 'Entry with URL' # Entry with URL
     f37b0bab-9cb9-4695-b431-f05d5e3bd8da: 'Single Line Text' # Single Line Text
     f232290f-f45b-4537-95e4-353f7e6f6301: 'Web Page Url' # Web Page Url

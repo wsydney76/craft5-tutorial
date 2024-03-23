@@ -2,5 +2,5 @@ allowPublicRegistration: false
 deactivateByDefault: false
 defaultGroup: null
 photoSubpath: userphotos
-photoVolumeUid: efd6d899-7b71-4318-8402-669e92416168 # System Files
+photoVolumeUid: c9a4fbad-6ca0-4e20-ba72-da2c14a38190 # Images
 requireEmailVerification: true
