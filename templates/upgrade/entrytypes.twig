@@ -1,7 +1,18 @@
 {# @var type \craft\models\EntryType #}
 {# @var layout \craft\models\FieldLayout #}
 {# @var fieldElement \craft\fieldlayoutelements\CustomField #}
-{% set types = collect(craft.app.entries.allEntryTypes) %}
+
+{% requireAdmin %}
+
+{% set types = craft.app.entries.allEntryTypes %}
+
+{% set handles = craft.app.request.queryParam('handles') %}
+
+{% if handles %}
+    {% set handles = handles|split(',') %}
+    {% set types = types|filter(t => t.handle in handles) %}
+{% endif %}
+
 {% set settingsUrl = "/#{craft.app.config.general.cpTrigger}/settings/" %}
 
 <table>
@@ -18,7 +29,7 @@
         </tr>
     </thead>
 
-    {% for type in types.sortBy('handle') %}
+    {% for type in types|multisort('handle') %}
         {% set layout = type.fieldLayout %}
         <tr>
             <td>{{ loop.index }}</td>

@@ -35,6 +35,22 @@ We then built a extended version of Craft's official tutorial.
 * Use `eagerly()` method for eager loading
 * Added 'Links'  block as an example for nested matrix entries
 
+### Migration helpers
+
+A couple of CLI commands / Twig templates to help with migration. 
+
+* Stolen from a more complex project 
+* Obsolete after migration, included for reference.
+
+* `craft main/migration/check-runtime-errors` checks for runtime errors after initial migration
+* `craft main/migration/check-consolidate-fields-candidates` checks for fields with identical settings that could be consolidated
+
+* `/upgrade/fields` lists existing fields with their settings and their usage in sections.
+* `/upgrade/fields?type=craft\fields\PlainText` filters for a specific field type, show all type specific settings.
+* `/upgrade/fields?handles=text,text2,text3` filters for specific field handles, compare all type specific settings.
+
+* `/upgrade/entrytypes` lists existing entry types with their usage and custom fields.
+
 ## DDEV Installation
 
 * Clone repository
