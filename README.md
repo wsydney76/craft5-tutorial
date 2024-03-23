@@ -31,7 +31,8 @@ We then built a extended version of Craft's official tutorial.
 * Use generic fields and field instances
 * Use icons/cards
 * Updated custom CSS
-* User `render()` method for matrix field
+* Use `render()` method for matrix field
+* Use `eagerly()` method for eager loading
 
 ## DDEV Installation
 

@@ -76,7 +76,7 @@ fieldLayouts:
             handle: imageStyle
             includeInCards: false
             instructions: null
-            label: Style
+            label: __blank__
             providesThumbs: false
             required: false
             tip: null

@@ -49,7 +49,7 @@ class FauxTwigExtension extends AbstractExtension implements GlobalsInterface
 
             // Craft Elements
             'image' => new Asset(),
-            'block' => new MatrixBlock(),
+            'block' => new Entry(),
 
             // Collections (Query results)
             'entries' => new Collection(),

@@ -2,13 +2,6 @@
 
 {# @param query EntryQuery #}
 
-{# Eager load featured Image and first text block #}
-{% set query = query
-    .with([
-        ['featuredImage', {withTransforms: [craft.app.config.custom.cardTransform]}],
-        ['bodyContent', {type: 'text', limit: 1}]
-    ]) %}
-
 {# Execute paginated query #}
 {% paginate query.limit(craft.app.config.custom.cardsPerPage) as pageInfo, entries %}
 
@@ -21,16 +14,20 @@
 
                 {# Use embed for consistent card layout #}
                 {% embed '_layouts/partials/card.twig' with {
-                    image: entry.featuredImage.one ?? siteInfo.featuredImage.one,
+                    image: entry.featuredImage
+                        .eagerly()
+                        .withTransforms([craft.app.config.custom.cardTransform])
+                    .one ??
+                    siteInfo.featuredImage.one,
                     url: entry.url
                 } %}
                     {% block content %}
                         <div class="font-semibold text-lg">{{ entry.title }}</div>
-                        
-                        {% set block = entry.bodyContent.one %}
+
+                        {% set block = entry.bodyContent.type('text').eagerly().one %}
                         {% if block %}
                             <div class="mt-2 text-sm">
-                                {# 
+                                {#
                                 The truncated first text block. 
                                 Avoid showing markdown stuff or invalid html tags.
                                 #}

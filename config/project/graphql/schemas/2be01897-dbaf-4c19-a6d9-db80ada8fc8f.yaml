@@ -1,2 +1,12 @@
 isPublic: true
 name: 'Public Schema'
+scope:
+  - 'sites.2393c71c-94e8-4e90-bb19-949696b8be0b:read' # English
+  - 'sites.b7acd2cf-9449-4637-a40c-2e266a19cc19:read' # Deutsch
+  - 'sections.21e8b35e-5b6d-4f11-bc0e-26fcaa107ce8:read' # Home
+  - 'sections.a7f4b9fd-a554-4545-af32-3b57544c9432:read' # Site Info - Global Settings
+  - 'sections.5f021491-7c29-4320-be70-454d594268af:read' # Page
+  - 'sections.585f70b2-f84a-47ff-ad71-3faff9698ba9:read' # Post
+  - 'sections.4e30878f-1e26-4e1b-9ced-b3cd32686df9:read' # Topic
+  - 'nestedentryfields.95f98672-9562-44a0-8639-92d2b55ceeb6:read' # Body Content
+  - 'volumes.c9a4fbad-6ca0-4e20-ba72-da2c14a38190:read' # Images

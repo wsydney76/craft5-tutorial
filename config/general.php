@@ -34,6 +34,7 @@ return GeneralConfig::create()
 	->revAssetUrls()
     ->transformGifs(false)
     ->transformSvgs(false)
+    ->tempAssetUploadFs('internalFs')
 	->enableTemplateCaching($isProd)
     ->translationDebugOutput(false)
 	->aliases([

@@ -2,10 +2,22 @@
 
 {% from '_macros/lib.twig' import img %}
 
-{% set image = entry.image.one %}
-
 {% set wide = entry.imageStyle.contains('wide') %}
 {% set fullHeight = entry.imageStyle.contains('fullHeight')%}
+{% set transform = wide ? {width: 1024, height: fullHeight ? null : 440} : {width: 825, height: fullHeight ? null : 350} %}
+
+
+{#
+Adding eager loading for images here, 
+however, based on average count of entries, this may not be significant.
+Only measuring with real world data will tell.
+#}
+
+{# TODO: Adding 'withTransforms' on this level has no effect #}
+{# TODO: Can be different for all image blocks, and add responsive sizes to the mix... #}
+{# {% set image = entry.image.eagerly().withTransforms([transform]).one %} #}
+
+{% set image = entry.image.eagerly().one %}
 
 {% if image %}
     {# Apply negative margin for images with 'wide' style on larger screens #}
@@ -14,7 +26,7 @@
         {# Adjust transforms based on entry attributes #}
         {# TODO: Check srcsets #}
         {{ img(image, {
-            transform: wide ? {width: 1024, height: fullHeight ? null : 440} : {width: 825, height: fullHeight ? null : 350},
+            transform: transform,
             scrset: wide ?  [1024, 825, 400] : null
         }) }}
 

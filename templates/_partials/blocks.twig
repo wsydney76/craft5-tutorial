@@ -2,12 +2,6 @@
 
 {% set entries = query.collect %}
 
-{#
-We might add eager loading for images etc here, 
-however, based on average count of entries, this may not be significant.
-Only measuring with real world data will tell.
-#}
-
 {% if entries.count %}
     {# Output content builder entries with Tailwind typography. #}
     <div class="my-8 prose prose-lg prose-slate max-w-none hyphens-auto">
