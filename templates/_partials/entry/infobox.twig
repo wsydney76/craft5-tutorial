@@ -1,0 +1,31 @@
+{% set typeLUT = {
+    info: {
+        classes: 'bg-blue-200 border-blue-700 text-blue-900',
+        icon: 'chat'
+    },
+    success: {
+        classes: 'bg-green-200 border-green-700 text-green-900',
+        icon: 'success-circle'
+    },
+    notice: {
+        classes: 'bg-orange-200 border-orange-700 text-orange-900',
+        icon: 'info'
+    },
+    alert: {
+        classes: 'bg-red-200 border-red-700 text-red-900 font-semibold',
+        icon: 'warning'
+    },
+} %}
+
+{% set type = entry.infoboxType.value ?? 'info' %}
+
+<div class="not-prose">
+    <div class="flex items-center space-x-4 my-8 px-6 py-4 rounded border {{ typeLUT[type].classes }}">
+        <div class="shrink-0">
+            {% include "_icons/#{typeLUT[type].icon}.svg" %}
+        </div>
+        <div>
+            {{ entry.text|md|purify }}
+        </div>
+    </div>
+</div>

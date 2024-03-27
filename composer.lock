@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32c55611a2fb9352ff4b22ed51025fcd",
+    "content-hash": "c51d866c167cfc2ed4addba578fda226",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -233,11 +233,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.0.0-beta.11",
+            "version": "5.0.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/4d3148895355dbc06d8e03dadc280e32868a21f9",
-                "reference": "4d3148895355dbc06d8e03dadc280e32868a21f9",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/f6a8fb685d44e387435825e3a96809eeda4973a6",
+                "reference": "f6a8fb685d44e387435825e3a96809eeda4973a6",
                 "shasum": ""
             },
             "require": {
@@ -330,7 +330,7 @@
                 "docs": "https://craftcms.com/docs/5.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2024-03-23T01:20:26+00:00"
+            "time": "2024-03-26T17:19:11+00:00"
         },
         {
             "name": "craftcms/plugin-installer",
@@ -4297,11 +4297,11 @@
         },
         {
             "name": "web-auth/metadata-service",
-            "version": "4.8.2",
+            "version": "4.8.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-auth/webauthn-metadata-service/zipball/024df5fb26166adf388dea697d2826ae5a6001cf",
-                "reference": "024df5fb26166adf388dea697d2826ae5a6001cf",
+                "url": "https://api.github.com/repos/web-auth/webauthn-metadata-service/zipball/fb7c1f107639285fab90f870aab38360252c82f5",
+                "reference": "fb7c1f107639285fab90f870aab38360252c82f5",
                 "shasum": ""
             },
             "require": {
@@ -4358,15 +4358,15 @@
                 "fido",
                 "webauthn"
             ],
-            "time": "2024-02-26T07:58:15+00:00"
+            "time": "2024-03-13T07:16:02+00:00"
         },
         {
             "name": "web-auth/webauthn-lib",
-            "version": "4.8.2",
+            "version": "4.8.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-auth/webauthn-lib/zipball/abac08104bbbbdef01ace704c90ff8290696e47f",
-                "reference": "abac08104bbbbdef01ace704c90ff8290696e47f",
+                "url": "https://api.github.com/repos/web-auth/webauthn-lib/zipball/d296fde8450ce6972c54315a70e32159cad7e35b",
+                "reference": "d296fde8450ce6972c54315a70e32159cad7e35b",
                 "shasum": ""
             },
             "require": {
@@ -4382,7 +4382,7 @@
                 "spomky-labs/cbor-php": "^3.0",
                 "symfony/uid": "^6.1|^7.0",
                 "web-auth/cose-lib": "^4.2.3",
-                "web-auth/metadata-service": "4.8.2"
+                "web-auth/metadata-service": "4.8.3"
             },
             "suggest": {
                 "phpdocumentor/reflection-docblock": "As of 4.5.x, the phpdocumentor/reflection-docblock component will become mandatory for converting objects such as the Metadata Statement",
@@ -4425,7 +4425,7 @@
                 "fido",
                 "webauthn"
             ],
-            "time": "2024-02-26T19:17:26+00:00"
+            "time": "2024-03-22T20:51:36+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -5278,9 +5278,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "craftcms/cms": 10
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

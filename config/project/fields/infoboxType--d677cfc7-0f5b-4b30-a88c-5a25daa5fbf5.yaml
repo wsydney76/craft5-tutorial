@@ -1,0 +1,54 @@
+columnSuffix: null
+handle: infoboxType
+instructions: null
+name: 'Infobox Type'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Info
+        -
+          - value
+          - info
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Success
+        -
+          - value
+          - success
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Notice
+        -
+          - value
+          - notice
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Alert
+        -
+          - value
+          - alert
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

@@ -1,7 +1,7 @@
 assets:
   tempSubpath: temporary-uploads
   tempVolumeUid: efd6d899-7b71-4318-8402-669e92416168
-dateModified: 1711209632
+dateModified: 1711562086
 elementSources:
   craft\elements\Asset:
     -
@@ -249,10 +249,12 @@ meta:
     a3605555-7165-4ea9-a338-870db2eba7ca: Heading # Heading
     ab2052c5-b53a-4cbd-b95d-96ea7489c375: Home # Home
     abb455ba-032b-461d-9c8d-dca9ed3fc7bd: Image # Image
+    ae1983cd-1a96-4f39-8b1d-fae967428550: Infobox # Infobox
     b7acd2cf-9449-4637-a40c-2e266a19cc19: Deutsch # Deutsch
     b8b190d9-515e-4173-a718-1c221741d34c: Links # Links
     c2c572b1-9642-40f2-9fe4-cd14bcd186d3: Links # Links
     c9a4fbad-6ca0-4e20-ba72-da2c14a38190: Images # Images
+    d677cfc7-0f5b-4b30-a88c-5a25daa5fbf5: 'Infobox Type' # Infobox Type
     eb230d0c-f88a-40de-a743-994de14eb8f8: Style # Style
     f058efdf-af3b-4948-9dd7-914ea547cce8: 'Entry with URL' # Entry with URL
     f37b0bab-9cb9-4695-b431-f05d5e3bd8da: 'Single Line Text' # Single Line Text

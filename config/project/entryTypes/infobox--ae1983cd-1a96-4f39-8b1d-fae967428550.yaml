@@ -1,0 +1,80 @@
+color: null
+fieldLayouts:
+  e6ab87e8-e6e6-4938-b020-ab47fd941ef9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 54ec52f1-6b48-47ac-b85d-c3fc46a0cdf4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 86b9888e-ef59-4f68-8ece-9b7badf30277 # Multi Line Text
+            handle: text
+            includeInCards: true
+            instructions: null
+            label: Text
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a2610a1c-da5f-4392-bf69-85dc22678bd1
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: d677cfc7-0f5b-4b30-a88c-5a25daa5fbf5 # Infobox Type
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1ceb65e4-4b8a-48e1-953d-54b5bc0f235f
+            userCondition: null
+            warning: null
+            width: 25
+        name: Content
+        uid: cab4cd68-dc54-4be0-bf18-3dd8d163002b
+        userCondition: null
+handle: infobox
+hasTitleField: false
+icon: circle-info
+name: Infobox
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
