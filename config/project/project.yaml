@@ -1,7 +1,7 @@
 assets:
   tempSubpath: temporary-uploads
   tempVolumeUid: efd6d899-7b71-4318-8402-669e92416168
-dateModified: 1711562086
+dateModified: 1711707774
 elementSources:
   craft\elements\Asset:
     -
@@ -212,6 +212,7 @@ fs:
     url: '@web/transforms'
 meta:
   __names__:
+    0b747e64-655c-4f05-a222-84ca95a619a0: 'Contact Info' # Contact Info
     0e989e8d-658a-4a1e-acf5-edb2387959ab: 'Post Index' # Post Index
     1d65442c-c0b9-46f4-8518-9a6c53e21bc1: 'Featured Image' # Featured Image
     1eac01fa-9e12-426e-a043-60ae35acf391: Cite # Cite
@@ -221,14 +222,18 @@ meta:
     4b9eed77-fa62-4ecc-9486-744a64f075d4: Caption # Caption
     4e30878f-1e26-4e1b-9ced-b3cd32686df9: Topic # Topic
     5c400efe-2716-4221-a54a-4ebaf6a3c6cb: 'Heading Level' # Heading Level
+    5cb55ed0-9e56-41b5-bf18-74c46a5c1b5f: 'Contact Info' # Contact Info
     5f021491-7c29-4320-be70-454d594268af: Page # Page
     8ed4044d-89b6-4d6b-a8a3-e303f533263a: Style # Style
+    9e49c3cc-51f3-4bc0-ab6a-ecde20fcb06c: 'Social Media' # Social Media
     18e8e721-36cd-4c7a-a02a-44c513fb3cb8: Default # Default
     19a49103-3b3e-48c0-955b-996599d8c651: 'Default Page' # Default Page
     19d8011f-2129-4d06-b597-49d7125063c7: Quote # Quote
     21e8b35e-5b6d-4f11-bc0e-26fcaa107ce8: Home # Home
+    034e4f8b-144d-44f4-97ef-f9f0b75b1a1e: About # About
     63e734ee-d709-488a-bd8d-3a90ab070825: Text # Text
     70f89230-5283-401e-a338-1522f7797837: 'Internal link' # Internal link
+    73ceae64-5d6e-4a10-bd9e-eb6bb5d745b9: Telephone # Telephone
     78ba6fca-0979-4552-a36e-f6f7a001b0f5: Text # Text
     78f9590c-8302-4bbc-8e62-39e3f6a2bd57: Text # Text
     86b9888e-ef59-4f68-8ece-9b7badf30277: 'Multi Line Text' # Multi Line Text
@@ -255,6 +260,7 @@ meta:
     c2c572b1-9642-40f2-9fe4-cd14bcd186d3: Links # Links
     c9a4fbad-6ca0-4e20-ba72-da2c14a38190: Images # Images
     d677cfc7-0f5b-4b30-a88c-5a25daa5fbf5: 'Infobox Type' # Infobox Type
+    dfec43e9-1949-4be3-bcfa-eeb2f8511b91: Email # Email
     eb230d0c-f88a-40de-a743-994de14eb8f8: Style # Style
     f058efdf-af3b-4948-9dd7-914ea547cce8: 'Entry with URL' # Entry with URL
     f37b0bab-9cb9-4695-b431-f05d5e3bd8da: 'Single Line Text' # Single Line Text

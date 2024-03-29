@@ -1,0 +1,14 @@
+{# Just the default content, with added contact block #}
+
+{# @param entry Entry #}
+
+{% extends "_layouts/main.twig" %}
+
+{% block content %}
+    
+    {% include '_partials/entry/contactInfo.twig' with {
+    	entry: entry.contactInfo.one
+    } only %}
+    
+    {{ parent() }}
+{% endblock %}

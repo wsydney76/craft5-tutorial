@@ -1,7 +1,7 @@
 {
   "name": "tutorial",
   "version": "1.0.0",
-  "description": "Craft 4 Tutorial",
+  "description": "Craft 5 Tutorial",
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./resources/css/app.css -o ./web/assets/dist/app.css --watch",

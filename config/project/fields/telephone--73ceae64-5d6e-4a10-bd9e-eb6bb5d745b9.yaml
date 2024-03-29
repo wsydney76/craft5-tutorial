@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: telephone
+instructions: null
+name: Telephone
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - tel
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

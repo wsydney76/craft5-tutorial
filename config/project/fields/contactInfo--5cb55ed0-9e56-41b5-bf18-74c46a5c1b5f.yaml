@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: contactInfo
+instructions: null
+name: 'Contact Info'
+searchable: true
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 0b747e64-655c-4f05-a222-84ca95a619a0 # Contact Info
+  includeTableView: false
+  maxEntries: 1
+  minEntries: 1
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

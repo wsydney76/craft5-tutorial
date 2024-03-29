@@ -1,5 +1,5 @@
 {
-  "description": "Empty Craft 4 Starter",
+  "description": "Craft 5 Tutorial",
   "require": {
     "craftcms/cms": "^5.0.0",
     "doublesecretagency/craft-cpcss": "^3.0.0",

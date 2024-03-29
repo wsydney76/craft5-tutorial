@@ -5,6 +5,7 @@ entryTypes:
   - 7035f447-3559-4542-9f1d-2b71bbc7a15a # Topic Index
   - 0e989e8d-658a-4a1e-acf5-edb2387959ab # Post Index
   - 19a49103-3b3e-48c0-955b-996599d8c651 # Default Page
+  - 034e4f8b-144d-44f4-97ef-f9f0b75b1a1e # About
 handle: page
 maxAuthors: 1
 name: Page
@@ -14,6 +15,9 @@ previewTargets:
       -
         - label
         - 'Primary entry page'
+      -
+        - refresh
+        - '1'
       -
         - urlFormat
         - '{url}'

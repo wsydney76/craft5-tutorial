@@ -1,0 +1,37 @@
+{% if entry %}
+    {% embed '_layouts/partials/box.twig' %}
+        {% block content %}
+            <table>
+
+                {{ _self.tr('Email', entry.email) }}
+
+                {{ _self.tr('Telephone', entry.telephone) }}
+                
+                {{ _self.tr('Telephone (Mobile)', entry.telephoneMobile) }}
+
+                {% for row in entry.socialMedia %}
+                    {{ _self.tr(row.platform, row.link, true) }}
+                {% endfor %}
+
+            </table>
+
+            {% macro tr(heading, value, asLink=false) %}
+                {% if value %}
+                    <tr>
+                        <th class="text-left p-1.5">{{ heading|t }}</th>
+                        <td class="p-1.5">
+                            {% if asLink %}
+                                <a class="underline" href="{{ value }}">{{ value }}</a>
+                            {% else %}
+                                {{ value }}
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endif %}
+            {% endmacro %}
+
+        {% endblock %}
+    {% endembed %}
+{% endif %}
+
+
