@@ -1,6 +1,6 @@
-color: null
+color: blue
 fieldLayouts:
-  6e414421-9c51-4c18-ae15-b858843720ed:
+  686e6f99-599c-4052-bc6c-546f7d255804:
     tabs:
       -
         elementCondition: null
@@ -30,36 +30,36 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: aa92f6bc-6f7a-4a15-b60c-3a82cb0b15a4
+            uid: 4ecd8d70-fd37-4f4e-8daf-b07161aff7a6
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 86b9888e-ef59-4f68-8ece-9b7badf30277 # Multi Line Text
-            handle: text
-            includeInCards: true
+            fieldUid: 588a9069-dcb4-469d-9e37-fbdb2834d780 # Column Content
+            handle: null
+            includeInCards: false
             instructions: null
             label: __blank__
             providesThumbs: false
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 93d9ef91-67bb-4ce6-b86b-d446e05d5b85
+            uid: 1db2b4b0-756f-4cbc-bdb0-348ba1e3aa43
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: cb85e172-be3d-443c-8def-36bee1a8c4a6
+        uid: e64e42c8-b5c0-4bde-93fb-f4e171b86aa7
         userCondition: null
-handle: text
+handle: columnWrapperRight
 hasTitleField: false
-icon: paragraph
-name: Text
+icon: null
+name: 'Right Column'
 showSlugField: false
 showStatusField: false
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: null
+titleFormat: '{columnContent.count} block(s) {columnContent.type(''heading'').one.text} '
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

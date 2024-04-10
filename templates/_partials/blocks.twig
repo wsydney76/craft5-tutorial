@@ -1,6 +1,6 @@
 {# @param query EntryQuery #}
 
-{% set entries = query.collect %}
+{% set entries = query.eagerly().collect %}
 
 {% if entries.count %}
     {# Output content builder entries with Tailwind typography. #}

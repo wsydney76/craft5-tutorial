@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: columnWrapperLeft
+instructions: null
+name: 'Column Wrapper Left'
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 6ff70f49-b17c-4c69-9030-a8d48619f08c # Left Column
+  includeTableView: false
+  maxEntries: 1
+  minEntries: 1
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

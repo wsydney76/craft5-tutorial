@@ -1,10 +1,10 @@
 columnSuffix: null
-handle: columnContentLeft
+handle: columnContent
 instructions: null
-name: 'Column Content Left'
+name: 'Column Content'
 searchable: true
 settings:
-  createButtonLabel: 'New content block in left column'
+  createButtonLabel: 'New content block in column'
   entryTypes:
     - a3605555-7165-4ea9-a338-870db2eba7ca # Heading
     - 78f9590c-8302-4bbc-8e62-39e3f6a2bd57 # Text

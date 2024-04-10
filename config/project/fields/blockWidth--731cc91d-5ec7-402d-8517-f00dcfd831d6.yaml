@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: columnSpan
+handle: blockWidth
 instructions: null
-name: 'Column Span'
+name: 'Block Width'
 searchable: false
 settings:
   options:
@@ -9,10 +9,10 @@ settings:
       __assoc__:
         -
           - label
-          - Half
+          - Default
         -
           - value
-          - '6'
+          - default
         -
           - default
           - '1'
@@ -20,10 +20,10 @@ settings:
       __assoc__:
         -
           - label
-          - 'One Third'
+          - Wide
         -
           - value
-          - '4'
+          - wide
         -
           - default
           - ''
@@ -31,10 +31,10 @@ settings:
       __assoc__:
         -
           - label
-          - 'Two Thirds'
+          - Wider
         -
           - value
-          - '8'
+          - wider
         -
           - default
           - ''
@@ -42,10 +42,10 @@ settings:
       __assoc__:
         -
           - label
-          - Quarter
+          - Full
         -
           - value
-          - '3'
+          - full
         -
           - default
           - ''

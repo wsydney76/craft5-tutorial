@@ -7,16 +7,39 @@
 {% set leftCols = entry.columnSpan.value ?? 6 %}
 {% set rightCols = 12 - leftCols %}
 
+{% set blockWidth = entry.blockWidth.value ?? 'default' %}
 
-<div class="grid grid-cols-1 md:grid-cols-12 gap-8 {{ entry.wide ? 'lg:-mx-24' }}">
+{% set blockStyle = {
+    default: '',
+    wide: 'lg:-mx-24',
+    wider: 'lg:-mx-48',
+    full: 'alignfull'
+} %}
+
+{% set leftCol = entry.columnWrapperLeft.eagerly().one %}
+{% set rightCol = entry.columnWrapperRight.eagerly().one %}
+
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 {{ blockStyle[blockWidth] }}">
     <div class="col-span-1 md:col-span-{{ leftCols }}">
         {% include '_partials/blocks.twig' with {
-            query: entry.columnContentLeft
+            query: leftCol.columnContent
         } only %}
     </div>
     <div class="col-span-1 md:col-span-{{ rightCols }}">
         {% include '_partials/blocks.twig' with {
-            query: entry.columnContentRight
+            query: rightCol.columnContent
         } only %}
     </div>
 </div>
+
+{% css %}
+@media (min-width: 768px) {
+    .alignfull {
+        margin-left  : calc( -100vw / 2 + 100% / 2 );
+        margin-right : calc( -100vw / 2 + 100% / 2 );
+        max-width    : 100vw;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+{% endcss %}

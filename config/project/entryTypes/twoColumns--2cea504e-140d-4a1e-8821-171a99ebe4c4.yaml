@@ -1,4 +1,4 @@
-color: green
+color: blue
 fieldLayouts:
   d24c2f3d-3e8b-4557-8be7-8997a801ea28:
     tabs:
@@ -36,6 +36,42 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 763955f3-df9e-4052-ac07-2ac51d4cf621 # Column Wrapper Left
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: __blank__
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 06b43f6b-bce2-479f-af02-30a9d5495f34
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: d5adf46d-5753-4fad-9646-825eb5702f7b # Column Wrapper Right
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: __blank__
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 47899d39-dbc6-40b4-b2b8-ecc70f78b86b
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: b470ea7a-f77f-42cd-ade9-16ae81be0254
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
             fieldUid: 23ea6fd1-e412-40c0-9c01-d18acd9094c3 # Column Span
             handle: null
             includeInCards: false
@@ -51,51 +87,21 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 93372f33-2be3-4f89-9466-9ac943a3ea17 # Toggle
-            handle: wide
-            includeInCards: false
-            instructions: null
-            label: Wide
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 70e4433d-a324-4bef-9484-7849a6d78508
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: 588a9069-dcb4-469d-9e37-fbdb2834d780 # Column Content Left
+            fieldUid: 731cc91d-5ec7-402d-8517-f00dcfd831d6 # Block Width
             handle: null
             includeInCards: false
             instructions: null
-            label: Left
+            label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 74c600da-b89c-4811-87da-a66777be8152
+            uid: 89c20b2b-11df-4f16-af7f-0fa94e637252
             userCondition: null
             warning: null
             width: 50
-          -
-            elementCondition: null
-            fieldUid: 37238463-5d7b-4e1c-b4ba-fb014289a0f6 # Column Content Right
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: Right
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b9411a04-d206-4c86-aa3e-5973df73e3b1
-            userCondition: null
-            warning: null
-            width: 50
-        name: Content
-        uid: b470ea7a-f77f-42cd-ade9-16ae81be0254
+        name: Style
+        uid: bd250ae9-b161-4c52-a7d0-2f134408abb3
         userCondition: null
 handle: twoColumns
 hasTitleField: false

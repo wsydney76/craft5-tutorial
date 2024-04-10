@@ -1,4 +1,4 @@
-color: blue
+color: null
 fieldLayouts:
   41e5d65a-c578-41e0-8470-21b000104054:
     tabs:
@@ -40,7 +40,7 @@ fieldLayouts:
             handle: text
             includeInCards: true
             instructions: null
-            label: Text
+            label: __blank__
             providesThumbs: false
             required: true
             tip: null
@@ -55,7 +55,7 @@ fieldLayouts:
             handle: null
             includeInCards: false
             instructions: null
-            label: 'Heading Level'
+            label: __blank__
             providesThumbs: false
             required: true
             tip: null

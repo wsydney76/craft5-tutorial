@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: columnWrapperRight
+instructions: null
+name: 'Column Wrapper Right'
+searchable: true
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 21eee455-9690-4518-80ca-22cad003b316 # Right Column
+  includeTableView: false
+  maxEntries: 1
+  minEntries: 1
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
