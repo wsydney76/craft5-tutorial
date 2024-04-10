@@ -1,0 +1,22 @@
+{# Two columns block #}
+
+{# @param entry Entry #}
+
+{# Make sure md:col-span-(1-12) classes are safelisted in tailwind.config.js #}
+
+{% set leftCols = entry.columnSpan.value ?? 6 %}
+{% set rightCols = 12 - leftCols %}
+
+
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 {{ entry.wide ? 'lg:-mx-24' }}">
+    <div class="col-span-1 md:col-span-{{ leftCols }}">
+        {% include '_partials/blocks.twig' with {
+            query: entry.columnContentLeft
+        } only %}
+    </div>
+    <div class="col-span-1 md:col-span-{{ rightCols }}">
+        {% include '_partials/blocks.twig' with {
+            query: entry.columnContentRight
+        } only %}
+    </div>
+</div>

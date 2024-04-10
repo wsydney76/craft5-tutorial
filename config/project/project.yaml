@@ -1,7 +1,7 @@
 assets:
   tempSubpath: temporary-uploads
   tempVolumeUid: efd6d899-7b71-4318-8402-669e92416168
-dateModified: 1711707774
+dateModified: 1712739328
 elementSources:
   craft\elements\Asset:
     -
@@ -219,6 +219,8 @@ meta:
     2ac14555-67e9-455b-9337-b07a50478276: Topics # Topics
     2be01897-dbaf-4c19-a6d9-db80ada8fc8f: 'Public Schema' # Public Schema
     2c814539-4e36-4ab4-994c-4b2dac3b2af3: 'External link' # External link
+    2cea504e-140d-4a1e-8821-171a99ebe4c4: 'Two Columns' # Two Columns
+    3cd3265b-7102-49ff-9823-f3c237cc0b39: Accordion # Accordion
     4b9eed77-fa62-4ecc-9486-744a64f075d4: Caption # Caption
     4e30878f-1e26-4e1b-9ced-b3cd32686df9: Topic # Topic
     5c400efe-2716-4221-a54a-4ebaf6a3c6cb: 'Heading Level' # Heading Level
@@ -226,10 +228,12 @@ meta:
     5f021491-7c29-4320-be70-454d594268af: Page # Page
     8ed4044d-89b6-4d6b-a8a3-e303f533263a: Style # Style
     9e49c3cc-51f3-4bc0-ab6a-ecde20fcb06c: 'Social Media' # Social Media
+    17ebe26e-858c-47f1-99d0-d010214c0afc: 'Accordion Items' # Accordion Items
     18e8e721-36cd-4c7a-a02a-44c513fb3cb8: Default # Default
     19a49103-3b3e-48c0-955b-996599d8c651: 'Default Page' # Default Page
     19d8011f-2129-4d06-b597-49d7125063c7: Quote # Quote
     21e8b35e-5b6d-4f11-bc0e-26fcaa107ce8: Home # Home
+    23ea6fd1-e412-40c0-9c01-d18acd9094c3: 'Column Span' # Column Span
     034e4f8b-144d-44f4-97ef-f9f0b75b1a1e: About # About
     63e734ee-d709-488a-bd8d-3a90ab070825: Text # Text
     70f89230-5283-401e-a338-1522f7797837: 'Internal link' # Internal link
@@ -240,6 +244,7 @@ meta:
     95f98672-9562-44a0-8639-92d2b55ceeb6: 'Body Content' # Body Content
     560e7c36-f763-440f-b9b5-1d87228bc6df: 'Untranslatable Short Text' # Untranslatable Short Text
     585f70b2-f84a-47ff-ad71-3faff9698ba9: Post # Post
+    588a9069-dcb4-469d-9e37-fbdb2834d780: 'Column Content Left' # Column Content Left
     817d3d1a-d840-41a0-85a2-898d07aef769: Post # Post
     2393c71c-94e8-4e90-bb19-949696b8be0b: English # English
     05069f41-81bc-4395-b1dd-a4ba9ce0d878: Search # Search
@@ -247,7 +252,9 @@ meta:
     8937bb02-c9d0-460b-81ef-1f1bda00e1f7: 'Site Info - Global Settings' # Site Info - Global Settings
     9128a883-c73e-4009-b8d5-7971ce954682: Special # Special
     10877b5b-ab25-4e80-b0c0-74947be617eb: 'Block Type' # Block Type
+    28936a62-e46c-49e0-ba33-fb8ff66bb3ac: Item # Item
     93372f33-2be3-4f89-9466-9ac943a3ea17: Toggle # Toggle
+    37238463-5d7b-4e1c-b4ba-fb014289a0f6: 'Column Content Right' # Column Content Right
     a4a0dfdc-289d-4d50-baae-6a3215a85701: Text # Text
     a7f4b9fd-a554-4545-af32-3b57544c9432: 'Site Info - Global Settings' # Site Info - Global Settings
     a33610ee-ece8-47a1-949e-94477da5fd4d: Image # Image
@@ -269,10 +276,10 @@ meta:
 plugins:
   cp-css:
     edition: standard
-    enabled: true
+    enabled: false
     schemaVersion: 2.0.0
     settings:
-      additionalCss: "/* Increase font size */\r\n\r\nhtml, body {\r\n    font-size: 15px;\r\n}\r\n\r\n/* Fix flickering when spinner shows and title is empty */\r\n#page-title {\r\n    height: 34px;\r\n}\r\n\r\n.titlebar {\r\n    --gray-050: var(--gray-100);\r\n    --red-050: var(--red-100);\r\n    --orange-050: var(--orange-100);\r\n    --amber-050: var(--amber-100);\r\n    --yellow-050: var(--yellow-100);\r\n    --lime-050: var(--lime-100);\r\n    --green-050: var(--green-100);\r\n    --emerald-050: var(--emerald-100);\r\n    --teal-050: var(--teal-100);\r\n    --cyan-050: var(--cyan-100);\r\n    --sky-050: var(--sky-100);\r\n    --blue-050: var(--blue-100);\r\n    --indigo-050: var(--indigo-100);\r\n    --violet-050: var(--violet-100);\r\n    --purple-050: var(--purple-100);\r\n    --fuchsia-050: var(--fuchsia-100);\r\n    --pink-050: var(--pink-100);\r\n    --rose-050: var(--rose-100);\r\n\r\n}\r\n\r\n/*.fields .element-index .toolbar > div, .fields .element-index .footer  {\r\n    display: none;\r\n}*/\r\n\r\n/* Set link color back to V3, increase contrast\r\n:root {\r\n    --text-color: var(--gray-800);\r\n    --medium-dark-text-color: var(--gray-700);\r\n    --link-color: #0c4a6e;\r\n    --red-050: #fecaca;\r\n    --max-width: 1700px;\r\n}\r\n*/\r\n\r\n\r\ninput.text, textarea.text, .text > input, .text > textarea, table.editable textarea, .selectize-text > .selectize-control > .selectize-input {\r\n    font-size: 16px;\r\n}\r\n\r\n#crumbs {\r\n    font-size: 15px;\r\n    font-weight: 500;\r\n}\r\n\r\n.crumb {\r\n    padding-top: 4px;\r\n}\r\n\r\n.context-label, .context-menu-container {\r\n    font-size: 15px;\r\n    font-weight: 500;\r\n    margin-top: 4px;\r\n    background-color: #E4EDF6;\r\n}\r\n\r\nh2 {\r\n    font-size: 18px;\r\n}\r\n\r\n#content-container h2 {\r\n    border-color: var(--gray-400);\r\n    font-size: 20px;\r\n\r\n}\r\n\r\n#content-container .error-summary h2 {\r\n    font-size: 16px;\r\n}\r\n\r\n.readable blockquote.note.tip {\r\n    color: var(--blue-800);\r\n    border-color: var(--blue-800);\r\n}\r\n\r\n.readable blockquote.note.tip:before {\r\n    color: var(--blue-800);\r\n}\r\n\r\n/* TODO: without this, there is a vertical shift in 4.5\r\n#global-header {\r\n    min-height: 50px;\r\n}\r\n*/\r\n\r\n/*#global-sidebar {\r\n    background-color: var(--gray-100) !important;\r\n}*/\r\n\r\n/*\r\n#global-sidebar .nav-item:hover, #sidebar-trigger:hover {\r\n    color: black;\r\n}\r\n*/\r\n\r\n\r\n/* 4.2 toasts */\r\n#notifications [data-type=\"error\"] {\r\n    background-color: #D61F2B;\r\n    color: white;\r\n}\r\n\r\n#notifications [data-type=\"success\"] {\r\n    background-color: #16a34a;\r\n    color: white;\r\n}\r\n\r\n#notifications [data-type=\"notice\"] {\r\n    background-color: #2C5F2D;\r\n    color: white;\r\n}\r\n\r\n#notifications .notification .notification-icon {\r\n    color: white;\r\n}\r\n\r\nbody.ltr #notifications {\r\n    bottom: initial;\r\n    top: 8px;\r\n    left: 50%;\r\n    transform: translateX(-50%);\r\n}\r\n\r\n#notifications .notification-details {\r\n    background-color: white;\r\n    padding: 4px;\r\n}\r\n\r\n#notifications [data-type=\"success\"] .notification-details {\r\n    background-color: #f0fdf4;\r\n    padding: 4px;\r\n}\r\n\r\n/* .content-pane, .matrixblock {\r\n    background-color: #fbfbff;\r\n}*/\r\n\r\n.icons a[href*=\"/admin/settings/globals\"],\r\n.icons a[href*=\"/admin/settings/categories\"],\r\n.icons a[href*=\"/admin/settings/tags\"] {\r\n    display: none;\r\n}\r\n"
+      additionalCss: "/* Increase font size */\r\n\r\nhtml, body {\r\n    font-size: 15px;\r\n}\r\n\r\n/* Fix flickering when spinner shows and title is empty */\r\n#page-title {\r\n    height: 34px;\r\n}\r\n\r\n.titlebar {\r\n    --gray-050: var(--gray-100);\r\n    --red-050: var(--red-100);\r\n    --orange-050: var(--orange-100);\r\n    --amber-050: var(--amber-100);\r\n    --yellow-050: var(--yellow-100);\r\n    --lime-050: var(--lime-100);\r\n    --green-050: var(--blue-200);\r\n    --emerald-050: var(--emerald-100);\r\n    --teal-050: var(--teal-100);\r\n    --cyan-050: var(--cyan-100);\r\n    --sky-050: var(--sky-100);\r\n    --blue-050: var(--blue-100);\r\n    --indigo-050: var(--indigo-100);\r\n    --violet-050: var(--violet-100);\r\n    --purple-050: var(--purple-100);\r\n    --fuchsia-050: var(--fuchsia-100);\r\n    --pink-050: var(--pink-100);\r\n    --rose-050: var(--rose-100);\r\n\r\n    --green-900: var(--blue-900);\r\n\r\n\r\n}\r\n\r\n.titlebar .cp-icon.green  {\r\n    --icon-color: var(--blue-900);\r\n}\r\n\r\n.matrixblock {\r\n    --green-100: var(--blue-200);\r\n\r\n}\r\n\r\n\r\n/*.fields .element-index .toolbar > div, .fields .element-index .footer  {\r\n    display: none;\r\n}*/\r\n\r\n/* Set link color back to V3, increase contrast\r\n:root {\r\n    --text-color: var(--gray-800);\r\n    --medium-dark-text-color: var(--gray-700);\r\n    --link-color: #0c4a6e;\r\n    --red-050: #fecaca;\r\n    --max-width: 1700px;\r\n}\r\n*/\r\n\r\n\r\ninput.text, textarea.text, .text > input, .text > textarea, table.editable textarea, .selectize-text > .selectize-control > .selectize-input {\r\n    font-size: 16px;\r\n}\r\n\r\n#crumbs {\r\n    font-size: 15px;\r\n    font-weight: 500;\r\n}\r\n\r\n.crumb {\r\n    padding-top: 4px;\r\n}\r\n\r\n.context-label, .context-menu-container {\r\n    font-size: 15px;\r\n    font-weight: 500;\r\n    margin-top: 4px;\r\n    background-color: #E4EDF6;\r\n}\r\n\r\nh2 {\r\n    font-size: 18px;\r\n}\r\n\r\n#content-container h2 {\r\n    border-color: var(--gray-400);\r\n    font-size: 20px;\r\n\r\n}\r\n\r\n#content-container .error-summary h2 {\r\n    font-size: 16px;\r\n}\r\n\r\n.readable blockquote.note.tip {\r\n    color: var(--blue-800);\r\n    border-color: var(--blue-800);\r\n}\r\n\r\n.readable blockquote.note.tip:before {\r\n    color: var(--blue-800);\r\n}\r\n\r\n/* TODO: without this, there is a vertical shift in 4.5\r\n#global-header {\r\n    min-height: 50px;\r\n}\r\n*/\r\n\r\n/*#global-sidebar {\r\n    background-color: var(--gray-100) !important;\r\n}*/\r\n\r\n/*\r\n#global-sidebar .nav-item:hover, #sidebar-trigger:hover {\r\n    color: black;\r\n}\r\n*/\r\n\r\n\r\n/* 4.2 toasts */\r\n#notifications [data-type=\"error\"] {\r\n    background-color: #D61F2B;\r\n    color: white;\r\n}\r\n\r\n#notifications [data-type=\"success\"] {\r\n    background-color: #16a34a;\r\n    color: white;\r\n}\r\n\r\n#notifications [data-type=\"notice\"] {\r\n    background-color: #2C5F2D;\r\n    color: white;\r\n}\r\n\r\n#notifications .notification .notification-icon {\r\n    color: white;\r\n}\r\n\r\nbody.ltr #notifications {\r\n    bottom: initial;\r\n    top: 8px;\r\n    left: 50%;\r\n    transform: translateX(-50%);\r\n}\r\n\r\n#notifications .notification-details {\r\n    background-color: white;\r\n    padding: 4px;\r\n}\r\n\r\n#notifications [data-type=\"success\"] .notification-details {\r\n    background-color: #f0fdf4;\r\n    padding: 4px;\r\n}\r\n\r\n/* .content-pane, .matrixblock {\r\n    background-color: #fbfbff;\r\n}*/\r\n\r\n.icons a[href*=\"/admin/settings/globals\"],\r\n.icons a[href*=\"/admin/settings/categories\"],\r\n.icons a[href*=\"/admin/settings/tags\"] {\r\n    display: none;\r\n}\r\n"
       cacheBusting: true
       cssFile: ''
 system:

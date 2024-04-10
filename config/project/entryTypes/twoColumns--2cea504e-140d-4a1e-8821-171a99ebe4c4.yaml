@@ -1,6 +1,6 @@
-color: blue
+color: green
 fieldLayouts:
-  0a8eb920-774e-4467-b009-325d6a5b47a6:
+  d24c2f3d-3e8b-4557-8be7-8997a801ea28:
     tabs:
       -
         elementCondition: null
@@ -30,68 +30,77 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: c79a815d-fcf3-4b68-ba88-5dc03342397b
+            uid: be2b9b90-1cdc-4bcd-9965-15e494314721
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 86b9888e-ef59-4f68-8ece-9b7badf30277 # Multi Line Text
-            handle: text
-            includeInCards: true
-            instructions: null
-            label: Text
-            providesThumbs: false
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b4fa8163-564d-4a5f-bdf3-92c501282fad
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: f37b0bab-9cb9-4695-b431-f05d5e3bd8da # Single Line Text
-            handle: cite
-            includeInCards: false
-            instructions: null
-            label: Cite
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 57d602e9-ba50-41dd-a31b-634f9a7872b6
-            userCondition: null
-            warning: null
-            width: 100
-        name: Content
-        uid: 756bc6cb-dc8c-4411-a1ce-c980d292105f
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: eb230d0c-f88a-40de-a743-994de14eb8f8 # Style
+            fieldUid: 23ea6fd1-e412-40c0-9c01-d18acd9094c3 # Column Span
             handle: null
             includeInCards: false
             instructions: null
-            label: __blank__
+            label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 867dfbcf-588a-435f-8dbd-b31e4d4a9347
+            uid: 6e8c4df9-3e8b-4fcd-8325-2f9ee246472e
             userCondition: null
             warning: null
-            width: 25
-        name: Style
-        uid: 041dd0f5-7771-4f70-bef2-b7d262683df7
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 93372f33-2be3-4f89-9466-9ac943a3ea17 # Toggle
+            handle: wide
+            includeInCards: false
+            instructions: null
+            label: Wide
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 70e4433d-a324-4bef-9484-7849a6d78508
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 588a9069-dcb4-469d-9e37-fbdb2834d780 # Column Content Left
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Left
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 74c600da-b89c-4811-87da-a66777be8152
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 37238463-5d7b-4e1c-b4ba-fb014289a0f6 # Column Content Right
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Right
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b9411a04-d206-4c86-aa3e-5973df73e3b1
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: b470ea7a-f77f-42cd-ade9-16ae81be0254
         userCondition: null
-handle: quote
+handle: twoColumns
 hasTitleField: false
-icon: quote-right
-name: Quote
+icon: table-columns
+name: 'Two Columns'
 showSlugField: false
 showStatusField: false
 slugTranslationKeyFormat: null

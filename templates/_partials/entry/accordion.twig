@@ -1,0 +1,10 @@
+<div class="space-y-4">
+    {% for item in entry.accordionItems.all %}
+        <details class="border border-gray-300 bg-white p-4 shadow-md rounded">
+            <summary class="font-bold">{{ item.summary }}</summary>
+            <div class="ml-4 mt-4">
+                {{ item.details }}
+            </div>
+        </details>
+    {% endfor %}
+</div>
