@@ -54,12 +54,12 @@ fieldLayouts:
         userCondition: null
 handle: columnWrapperLeft
 hasTitleField: false
-icon: ''
+icon: null
 name: 'Left Column'
 showSlugField: false
 showStatusField: false
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
 titleFormat: '{columnContent.count} block(s) {columnContent.type(''heading'').one.text} '
-titleTranslationKeyFormat: ''
+titleTranslationKeyFormat: null
 titleTranslationMethod: site
