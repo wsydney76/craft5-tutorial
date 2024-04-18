@@ -1,7 +1,7 @@
 assets:
   tempSubpath: temporary-uploads
   tempVolumeUid: efd6d899-7b71-4318-8402-669e92416168
-dateModified: 1712764044
+dateModified: 1713012940
 elementSources:
   craft\elements\Asset:
     -
@@ -213,6 +213,7 @@ fs:
 meta:
   __names__:
     0b747e64-655c-4f05-a222-84ca95a619a0: 'Contact Info' # Contact Info
+    0d61a820-f5ca-4b29-bb56-75e4a2c981a8: 'Cover Image' # Cover Image
     0e989e8d-658a-4a1e-acf5-edb2387959ab: 'Post Index' # Post Index
     1d65442c-c0b9-46f4-8518-9a6c53e21bc1: 'Featured Image' # Featured Image
     1eac01fa-9e12-426e-a043-60ae35acf391: Cite # Cite

@@ -12,6 +12,7 @@ settings:
     - 19d8011f-2129-4d06-b597-49d7125063c7 # Quote
     - b8b190d9-515e-4173-a718-1c221741d34c # Links
     - ae1983cd-1a96-4f39-8b1d-fae967428550 # Infobox
+    - 0d61a820-f5ca-4b29-bb56-75e4a2c981a8 # Cover Image
   includeTableView: false
   maxEntries: null
   minEntries: null

@@ -20,26 +20,28 @@
 {% set rightCol = entry.columnWrapperRight.eagerly().one %}
 
 <div class="grid grid-cols-1 md:grid-cols-12 gap-8 {{ blockStyle[blockWidth] }}">
-    <div class="col-span-1 md:col-span-{{ leftCols }}">
+    <div class="col-span-1 md:col-span-{{ leftCols }} h-full">
         {% include '_partials/blocks.twig' with {
             query: leftCol.columnContent
         } only %}
     </div>
-    <div class="col-span-1 md:col-span-{{ rightCols }}">
+    <div class="col-span-1 md:col-span-{{ rightCols }} h-full">
         {% include '_partials/blocks.twig' with {
             query: rightCol.columnContent
         } only %}
     </div>
 </div>
 
-{% css %}
-@media (min-width: 768px) {
-    .alignfull {
-        margin-left  : calc( -100vw / 2 + 100% / 2 );
-        margin-right : calc( -100vw / 2 + 100% / 2 );
-        max-width    : 100vw;
-        padding-left: 24px;
-        padding-right: 24px;
+{% if blockWidth == 'full' %}
+    {% css %}
+    @media (min-width: 768px) {
+        .alignfull {
+            margin-left: calc(-100vw / 2 + 100% / 2);
+            margin-right: calc(-100vw / 2 + 100% / 2);
+            max-width: 100vw;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
     }
-}
-{% endcss %}
+    {% endcss %}
+{% endif %}

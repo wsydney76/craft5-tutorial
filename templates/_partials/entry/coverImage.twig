@@ -1,0 +1,19 @@
+{% from '_macros/lib.twig' import img %}
+
+{% set image = entry.image.eagerly().one %}
+
+{% if image %}
+
+    {# TODO: Check sizes calculation, does that make sense for that type of image? #}
+
+
+    <img src="{{ image.url }}" class="object-cover object-center w-full h-full border border-red">
+
+   {# {{ img(image, {
+        transform: customConfig.transforms.layoutImage,
+        srcset: customConfig.srcsets.layoutImage,
+        attr: {
+            class: 'object-cover object-center w-full h-full'
+        }
+    }) }}#}
+{% endif %}

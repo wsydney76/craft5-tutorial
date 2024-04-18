@@ -1,6 +1,6 @@
-color: blue
+color: null
 fieldLayouts:
-  b658bf4d-0b93-4d93-af7a-cf78a1a65e7a:
+  6bdc3dba-8717-4368-a5df-8ff853d1e8b8:
     tabs:
       -
         elementCondition: null
@@ -30,36 +30,36 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: bb678dd7-70ec-4aad-ae8c-3c4e1fdc5487
+            uid: 4c3ab490-092b-4434-9a45-db9f3c93cbc0
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 588a9069-dcb4-469d-9e37-fbdb2834d780 # Column Content
+            fieldUid: abb455ba-032b-461d-9c8d-dca9ed3fc7bd # Image
             handle: null
             includeInCards: false
-            instructions: null
-            label: __blank__
+            instructions: 'This image will be scaled to fit the whole column. Has to be the only block in its column.'
+            label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 81749b69-40ff-4d67-b554-79af6a6f5272
+            uid: 0fcf97fd-6653-4592-9fea-9ad7be622217
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: ad352948-3cf0-4677-abbd-0ad66690ecc2
+        uid: 07b98214-1f0d-4ad6-a579-d149381d56e2
         userCondition: null
-handle: columnWrapperLeft
+handle: coverImage
 hasTitleField: false
-icon: ''
-name: 'Left Column'
+icon: image-polaroid
+name: 'Cover Image'
 showSlugField: false
 showStatusField: false
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: '{columnContent.count} block(s) {columnContent.type(''heading'').one.text} '
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: site

@@ -4,7 +4,7 @@
 
 {% if entries.count %}
     {# Output content builder entries with Tailwind typography. #}
-    <div class="my-8 prose prose-lg prose-slate max-w-none hyphens-auto">
+    <div class="my-8 prose prose-lg prose-slate max-w-none hyphens-auto h-full">
         {{ entries.render({entries}) }}
     </div>
 {% endif %}
