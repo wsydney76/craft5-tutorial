@@ -3,12 +3,30 @@
 {# @param pageInfo Paginate #}
 
 {% if pageInfo.totalPages > 1 %}
-    <nav class="mt-12 flex justify-between">
-        <div>
-            {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}">&lt; {{ 'Previous Page'|t }}</a>{% endif %}
+    <div class="mt-12 flex">
+        <div class="w-1/3">
+            {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}">&lt;&nbsp;{{ 'Previous Page'|t }}</a>{% endif %}
         </div>
-        <div class="text-right">
-            {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}">{{ 'Next Page'|t }} &gt;</a>{% endif %}
+        <div class="w-1/3 text-center">
+            <nav role="navigation" aria-label="Search result pagination">
+                <ul class="flex space-x-4 justify-center">
+                    {% for page, url in pageInfo.getDynamicRangeUrls(5) %}
+                        <li>
+                            {{ tag('a', {
+                                text: page,
+                                href: url,
+                                class: page == pageInfo.currentPage ? 'font-bold',
+                                aria: {
+                                    label: 'Go to page {p} of {t}'|t({p:page, t: pageInfo.totalPages}),
+                                },
+                            }) }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
         </div>
-    </nav>
+        <div class="w-1/3 text-right">
+            {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}">{{ 'Next Page'|t }}&nbsp;&gt;</a>{% endif %}
+        </div>
+    </div>
 {% endif %}

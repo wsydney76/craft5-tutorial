@@ -1,7 +1,9 @@
 <?php
 
 return [
+    'Email' => 'E-Mail',
     'Entries' => 'Einträge',
+    'Go to page {p} of {t}' => 'Gehe zu Seite {p} von {t}',
     'Incoming {count,plural,=1{Relationship} other{Relationships}}' => 'Eingehende {count,plural,=1{Verknüpfung} other{Verknüpfungen}}',
     'Jump to content' => 'Springe zum Inhalt',
     'New Posts' => 'Neue Beiträge',
@@ -11,22 +13,21 @@ return [
     'Previous Page' => 'Vorherige Seite',
     'Provisional Draft' => 'Provisorischer Entwurf',
     'Published on {date} by {name}' => 'Veröffentlicht am {date} von {name}',
+    'Search for:' => 'Suche nach:',
+    'Search' => 'Suche',
+    'Start' => 'Starten',
     'Table of Contents' => 'Inhaltsverzeichnis',
+    'Telephone (Mobile)' => 'Telefon (Mobil)',
+    'Telephone' => 'Telefon',
     'Topic' => 'Thema',
     'Topics' => 'Themen',
+    'Untitled' => 'Ohne Titel',
+    'Your search for "{q}" didn’t return any results.' => 'Ihre Suche nach "{q}" ergab keine Ergebnisse.',
     'msg_aiWarning' => 'Dieser Text ist KI-generiert und übersetzt. Vielleicht korrekt, vielleicht auch nicht.',
     '{count,plural,=1{Draft exists} other{Drafts exist}}' => '{count,plural,=1{Entwurf existiert} other{Entwürfe existieren}}',
+    '{count,plural,=1{search result} other{search results}}' => '{count,plural,=1{Suchergebnis} other{Suchergebnisse}}',
     '“' => '„',
     '”' => '“',
-    'Search' => 'Suche',
-    'Search for:' => 'Suche nach:',
-    'Start' => 'Starten',
-    'Untitled' => 'Ohne Titel',
-    '{count,plural,=1{search result} other{search results}}' => '{count,plural,=1{Suchergebnis} other{Suchergebnisse}}',
-    'Your search for "{q}" didn’t return any results.' => 'Ihre Suche nach "{q}" ergab keine Ergebnisse.',
-    'Email' => 'E-Mail',
-    'Telephone' => 'Telefon',
-    'Telephone (Mobile)' => 'Telefon (Mobil)',
 
 
     // Control Panel translations
@@ -85,4 +86,5 @@ return [
     'Volumes' => 'Volumen',
     'Wide' => 'Weit',
     'Work' => 'In Arbeit',
+
 ];
