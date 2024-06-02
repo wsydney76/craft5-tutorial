@@ -3,7 +3,7 @@
 {% from '_macros/lib.twig' import img %}
 
 {% set wide = entry.imageStyle.contains('wide') %}
-{% set fullHeight = entry.imageStyle.contains('fullHeight')%}
+{% set fullHeight = entry.imageStyle.contains('fullHeight') %}
 {% set transform = wide ? {width: 1024, height: fullHeight ? null : 440} : {width: 825, height: fullHeight ? null : 350} %}
 
 
@@ -33,15 +33,23 @@ Only measuring with real world data will tell.
         {# Add caption if one of caption or image copyright is present #}
         {% if entry.caption or image.copyright %}
             <figcaption class="flex justify-between">
+
                 <div>
                     {{ entry.caption }}
                 </div>
-                {% if image.copyright %}
-                    {# Make that a bit smaller #}
-                    {# We don't use an overlay here because having an overlay on the image
-                    and a caption below looks messed up. #}
-                    <div class="text-sm text-brand-500">({{ 'Photo'|t }}: {{ image.copyright }})</div>
-                {% endif %}
+
+                {# We don't use an overlay here because having an overlay on the image and a caption below looks messed up. #}
+                <div class="text-sm text-brand-500">
+                    {% if image.copyright %}
+                        ({{ 'Photo'|t }}: {{ image.copyright }})
+                    {% endif %}
+
+                    {% if entry.url %}
+                        <a class="font-normal text-gray-500 no-underline"
+                           href="{{ entry.url }}">{{ 'Details'|t }}
+                        </a>
+                    {% endif %}
+                </div>
             </figcaption>
         {% endif %}
     </figure>

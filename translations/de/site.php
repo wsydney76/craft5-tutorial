@@ -1,8 +1,13 @@
 <?php
 
 return [
+    'Alternative text' => 'Alternativer Text',
+    'Dimensions' => 'Dimensionen',
     'Email' => 'E-Mail',
     'Entries' => 'Einträge',
+    'File name' => 'Dateiname',
+    'File size' => 'Dateigröße',
+    'Folder path' => 'Ordnerpfad',
     'Go to page {p} of {t}' => 'Gehe zu Seite {p} von {t}',
     'Incoming {count,plural,=1{Relationship} other{Relationships}}' => 'Eingehende {count,plural,=1{Verknüpfung} other{Verknüpfungen}}',
     'Jump to content' => 'Springe zum Inhalt',
@@ -22,6 +27,7 @@ return [
     'Topic' => 'Thema',
     'Topics' => 'Themen',
     'Untitled' => 'Ohne Titel',
+    'Volume' => 'Volumen',
     'Your search for "{q}" didn’t return any results.' => 'Ihre Suche nach "{q}" ergab keine Ergebnisse.',
     'msg_aiWarning' => 'Dieser Text ist KI-generiert und übersetzt. Vielleicht korrekt, vielleicht auch nicht.',
     '{count,plural,=1{Draft exists} other{Drafts exist}}' => '{count,plural,=1{Entwurf existiert} other{Entwürfe existieren}}',

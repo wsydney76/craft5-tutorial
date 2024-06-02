@@ -22,6 +22,28 @@ settings:
   propagationKeyFormat: null
   propagationMethod: all
   showCardsInGrid: false
+  siteSettings:
+    __assoc__:
+      -
+        - 2393c71c-94e8-4e90-bb19-949696b8be0b # English
+        -
+          __assoc__:
+            -
+              - uriFormat
+              - '{owner.uri}/content/{id}'
+            -
+              - template
+              - _entries/content
+      -
+        - b7acd2cf-9449-4637-a40c-2e266a19cc19 # Deutsch
+        -
+          __assoc__:
+            -
+              - uriFormat
+              - '{owner.uri}/content/{id}'
+            -
+              - template
+              - _entries/content
   viewMode: blocks
 translationKeyFormat: null
 translationMethod: site

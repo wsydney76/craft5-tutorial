@@ -29,8 +29,8 @@
         {# Include section/entry type specific content #}
         {% if entry is defined %}
             {% include [
-                "_sections/#{entry.section.handle}/types/#{entry.type.handle}/card-content.twig",
-                "_sections/#{entry.section.handle}/card-content.twig",
+                "_entries/#{entry.section.handle}/types/#{entry.type.handle}/card-content.twig",
+                "_entries/#{entry.section.handle}/card-content.twig",
             ] ignore missing with {
                 entry
             } only %}

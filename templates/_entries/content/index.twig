@@ -1,0 +1,85 @@
+{% if entry.type != 'image' %}
+    {% exit 400 %}
+{% endif %}
+
+{% from '_macros/lib.twig' import img %}
+
+{% set image = entry.image.one %}
+{% if not image %}
+    {% exit 404 %}
+{% endif %}
+
+{% do _globals.set('title', image.title) %}
+
+{% extends "_layouts/main.twig" %}
+
+{% block featured %}{% endblock %}
+
+{% block content %}
+    {# Apply negative margin for images with 'wide' style on larger screens #}
+    <figure class="-mx-24">
+
+        {# Adjust transforms based on entry attributes #}
+        {# TODO: Check srcsets #}
+        <a href="{{ image.url }}" target="_blank">
+            {{ img(image, {
+                transform: {width: 1024, format: 'webp'},
+                scrset:  [1024, 825, 400]
+            }) }}
+        </a>
+    </figure>
+
+    <table class="file-properties mt-8">
+        <tr>
+            <td>{{ 'Owner'|t }}</td>
+            <td>{{ entry.owner.link }}</td>
+        </tr>
+        <tr>
+            <td>URL</td>
+            <td><a href="{{ image.url }}" target="_blank">{{ image.url }}</a></td>
+        </tr>
+        <tr>
+            <td>{{ 'Caption'|t }}</td>
+            <td>{{ entry.caption }}</td>
+        </tr>
+        <tr>
+            <td>{{ 'Copyright'|t }}</td>
+            <td>{{ image.copyright }}</td>
+        </tr>
+        <tr>
+            <td>{{ 'Alternative text'|t }}</td>
+            <td>{{ image.alt }}</td>
+        </tr>
+        <tr>
+            <td>{{ 'Volume'|t }}</td>
+            <td>{{ image.volume.name }}</td>
+        </tr>
+        <tr>
+            <td>{{ 'Folder path'|t }}</td>
+            <td>{{ image.folderPath }}</td>
+        </tr>
+        <tr>
+            <td>{{ 'File name'|t }}</td>
+            <td>{{ image.filename }}</td>
+        </tr>
+        <tr>
+            <td>{{ 'Dimensions'|t }}</td>
+            <td>{{ image.width }}x{{ image.height }}</td>
+        </tr>
+        <tr>
+            <td>{{ 'File size'|t }}</td>
+            <td>{{ craft.app.formatter.asShortSize(image.size, 1) }}</td>
+        </tr>
+
+    </table>
+{% endblock %}
+
+{% css %}
+.file-properties tr > :first-child {
+    padding-right: 12px;
+    font-weight: bold;
+}
+.file-properties tr > :first-child:after {
+    content: ':'
+}
+{% endcss %}

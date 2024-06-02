@@ -25,7 +25,7 @@ because we want to avoid redundant relationships and handle hierarchy ourselves.
 {% block content %}
 
     {# Show parent/children #}
-    {% include '_sections/topic/hierarchy.twig' with {
+    {% include '_entries/topic/hierarchy.twig' with {
         entry
     } only %}
 
