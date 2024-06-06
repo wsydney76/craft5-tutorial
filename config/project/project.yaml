@@ -1,7 +1,7 @@
 assets:
   tempSubpath: temporary-uploads
   tempVolumeUid: efd6d899-7b71-4318-8402-669e92416168
-dateModified: 1717324399
+dateModified: 1717668670
 elementSources:
   craft\elements\Asset:
     -
@@ -145,6 +145,7 @@ elementSources:
       disabled: false
       key: 'section:5f021491-7c29-4320-be70-454d594268af' # Page
       tableAttributes:
+        - status
         - type
         - drafts
         - postDate
@@ -157,6 +158,7 @@ elementSources:
       disabled: false
       key: 'section:585f70b2-f84a-47ff-ad71-3faff9698ba9' # Post
       tableAttributes:
+        - status
         - 'fieldInstance:1531a738-286f-4853-91dd-d0b677d6b9d1'
         - 'field:2ac14555-67e9-455b-9337-b07a50478276' # Topics
         - drafts
@@ -173,6 +175,7 @@ elementSources:
       disabled: false
       key: 'section:4e30878f-1e26-4e1b-9ced-b3cd32686df9' # Topic
       tableAttributes:
+        - status
         - postDate
         - link
       type: native
