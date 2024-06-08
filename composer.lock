@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "03eeb4c43d063580221a79e2a3ea6aa1",
+    "content-hash": "c243795c69490e62428ea7a7cb7cbce6",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -233,11 +233,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.2.0-beta.3",
+            "version": "5.2.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/f459d3c01b2c60db7d1f014005ff0b1757a439ef",
-                "reference": "f459d3c01b2c60db7d1f014005ff0b1757a439ef",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/1b2dd98384df894c87f3d6c21ad804220f63e19c",
+                "reference": "1b2dd98384df894c87f3d6c21ad804220f63e19c",
                 "shasum": ""
             },
             "require": {
@@ -308,7 +308,10 @@
                 "psr-4": {
                     "craft\\": "src/",
                     "yii2tech\\ar\\softdelete\\": "lib/ar-softdelete/src/"
-                }
+                },
+                "files": [
+                    "lib/yii2/helpers/ArrayHelper.php"
+                ]
             },
             "license": [
                 "proprietary"
@@ -334,7 +337,7 @@
                 "docs": "https://craftcms.com/docs/5.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2024-06-05T16:18:01+00:00"
+            "time": "2024-06-12T16:34:15+00:00"
         },
         {
             "name": "craftcms/plugin-installer",
@@ -5494,9 +5497,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "craftcms/cms": 10
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

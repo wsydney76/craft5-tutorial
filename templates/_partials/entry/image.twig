@@ -2,9 +2,23 @@
 
 {% from '_macros/lib.twig' import img %}
 
-{% set wide = entry.imageStyle.contains('wide') %}
-{% set fullHeight = entry.imageStyle.contains('fullHeight') %}
-{% set transform = wide ? {width: 1024, height: fullHeight ? null : 440} : {width: 825, height: fullHeight ? null : 350} %}
+{% set width = entry.blockWidth.value ?? 'default' %}
+{% set fullHeight = entry.fullHeight %}
+
+
+{% set transforms = {
+    default: {width: 1024, height: fullHeight ? null : 440},
+    wide: {width: 1024, height: fullHeight ? null : 440},
+    wider: {width: 1024, height: fullHeight ? null : 440},
+    full: {width: 2000, height: fullHeight ? null : 440}
+} %}
+
+{% set classes = {
+    default: '',
+    wide: 'lg:-mx-12',
+    wider: 'lg:-mx-24',
+    full: 'ml-[calc(50%-50vw)] mr-[calc(50%-50vw)] px-24'
+} %}
 
 
 {#
@@ -21,34 +35,33 @@ Only measuring with real world data will tell.
 
 {% if image %}
     {# Apply negative margin for images with 'wide' style on larger screens #}
-    <figure class="{{ wide ? 'lg:-mx-24' }}">
+    <figure class="{{ classes[width] }}">
 
         {# Adjust transforms based on entry attributes #}
         {# TODO: Check srcsets #}
         {{ img(image, {
-            transform: transform,
-            scrset: wide ?  [1024, 825, 400] : null
+            transform: transforms[width]
         }) }}
 
         {# Add caption if one of caption or image copyright is present #}
         {% if entry.caption or image.copyright %}
-            <figcaption class="flex justify-between">
+            <figcaption class="max-w-screen-2xl mx-auto flex justify-between">
 
                 <div>
                     {{ entry.caption }}
                 </div>
 
                 {# We don't use an overlay here because having an overlay on the image and a caption below looks messed up. #}
-                <div class="text-sm text-brand-500">
+                <div class="text-sm text-brand-500 ">
                     {% if image.copyright %}
                         ({{ 'Photo'|t }}: {{ image.copyright }})
                     {% endif %}
 
-                    {% if entry.url %}
-                        <a class="font-normal text-gray-500 no-underline"
-                           href="{{ entry.url }}">{{ 'Details'|t }}
-                        </a>
-                    {% endif %}
+                    {# Work around bug in matrix field uri creation #}
+                    <a class="font-normal text-gray-500 no-underline"
+                       href="{{ entry.url ?? url("content/#{entry.id}") }}">{{ 'Details'|t }}
+                    </a>
+
                 </div>
             </figcaption>
         {% endif %}

@@ -20,4 +20,5 @@
 
 return [
     'api' => 'graphql/api',
+    'content/<id:\d+>' => 'main/entries/content',
 ];
