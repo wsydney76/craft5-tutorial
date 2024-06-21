@@ -53,6 +53,9 @@ settings:
               -
                 - maxValue
                 - ''
+              -
+                - step
+                - 1
   selectionLabel: 'Select an image'
   showCardsInGrid: false
   showSiteMenu: false
