@@ -14,13 +14,24 @@ use craft\helpers\App;
 $cpTrigger = 'admin';
 $isCpRequest = str_starts_with($_SERVER['REQUEST_URI'], "/$cpTrigger") || str_starts_with($_GET['p'], $cpTrigger);
 
+// Can't use Craft's functionality here because it's not available before being configured...
+// This has to match the way site URLs are set up via .env/site settings (maybe this logic has to be environment-specific).
+
+$pageTrigger = match (substr($_SERVER['REQUEST_URI'], 0, 4)) {
+    '/de/' => '?seite=',
+    default => '?page=',
+};
+
 $isDev = App::env('CRAFT_ENVIRONMENT') === 'dev';
 $isProd = App::env('CRAFT_ENVIRONMENT') === 'production';
+
+
 
 return GeneralConfig::create()
 	->defaultWeekStartDay(1)
 	->omitScriptNameInUrls()
 	->cpTrigger($cpTrigger)
+    ->pageTrigger($pageTrigger)
 	->devMode($isDev)
     ->preloadSingles()
 	->allowAdminChanges($isDev)
