@@ -29,29 +29,36 @@ $isProd = App::env('CRAFT_ENVIRONMENT') === 'production';
 
 
 return GeneralConfig::create()
-	->defaultWeekStartDay(1)
-	->omitScriptNameInUrls()
-	->cpTrigger($cpTrigger)
-    ->pageTrigger($pageTrigger)
-	->devMode($isDev)
-    ->preloadSingles()
 	->allowAdminChanges($isDev)
-	->preventUserEnumeration()
-	->disallowRobots(!$isProd)
-	->maxRevisions(3)
 	->convertFilenamesToAscii()
-	->limitAutoSlugsToAscii()
+	->cpTrigger($cpTrigger)
+	->defaultWeekStartDay(1)
+	->devMode($isDev)
+	->disallowRobots(!$isProd)
+	->enableTemplateCaching($isProd)
 	->generateTransformsBeforePageLoad(!$isCpRequest)
+	->limitAutoSlugsToAscii()
+	->maxRevisions(3)
+	->omitScriptNameInUrls()
 	->optimizeImageFilesize(false)
+	->preventUserEnumeration()
 	->revAssetUrls()
+    ->pageTrigger($pageTrigger)
+    ->preloadSingles()
+    ->resourceBasePath('@webroot/dist/cpresources/')
+    ->resourceBaseUrl('@weburl/dist/cpresources/')
     ->transformGifs(false)
     ->transformSvgs(false)
-    ->tempAssetUploadFs('internalFs')
-	->enableTemplateCaching($isProd)
     ->translationDebugOutput(false)
+
 	->aliases([
-		// Prevent the @web alias from being set automatically (avoid cache poisoning vulnerability)
-		'@web' => App::env('PRIMARY_SITE_URL'),
+
+        // Prevent the @web alias from being set automatically (cache poisoning vulnerability)
+        // The @web alias is not recommended and not used, setting it here to avoid warnings in CP
+        '@web' => App::env('PRIMARY_SITE_URL'),
+
+        // Use this as a base url for sites/local filesystems
+        '@weburl' => App::env('PRIMARY_SITE_URL'),
 
 		// Lets `./craft clear-caches all` clear CP resources cache
 		'@webroot' => dirname(__DIR__) . '/web',

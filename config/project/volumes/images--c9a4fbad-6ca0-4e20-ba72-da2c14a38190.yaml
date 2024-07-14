@@ -85,11 +85,11 @@ fieldLayouts:
         name: Content
         uid: c1e3a4d5-1e1c-4d1a-990f-39e3b823150c
         userCondition: null
-fs: imagesFs
+fs: volumesFs
 handle: images
 name: Images
 sortOrder: 1
-subpath: ''
+subpath: images
 titleTranslationKeyFormat: null
 titleTranslationMethod: language
 transformFs: transformFs

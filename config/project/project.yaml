@@ -1,7 +1,7 @@
 assets:
   tempSubpath: temporary-uploads
   tempVolumeUid: efd6d899-7b71-4318-8402-669e92416168
-dateModified: 1720788777
+dateModified: 1720951042
 elementSources:
   craft\elements\Asset:
     -
@@ -192,27 +192,20 @@ email:
     username: ''
   transportType: craft\mail\transportadapters\Smtp
 fs:
-  imagesFs:
-    hasUrls: true
-    name: 'Images FS'
-    settings:
-      path: '@webroot/images'
-    type: craft\fs\Local
-    url: '@web/images'
-  internalFs:
-    hasUrls: true
-    name: 'Internal FS'
-    settings:
-      path: '@webroot/internal'
-    type: craft\fs\Local
-    url: '@web/internal'
   transformFs:
     hasUrls: true
     name: 'Transform FS'
     settings:
-      path: '@webroot/transforms'
+      path: '@webroot/dist/transforms'
     type: craft\fs\Local
-    url: '@web/transforms'
+    url: '@weburl/dist/transforms'
+  volumesFs:
+    hasUrls: true
+    name: 'Volumes FS'
+    settings:
+      path: '@webroot/volumes'
+    type: craft\fs\Local
+    url: '@weburl/volumes'
 meta:
   __names__:
     0b747e64-655c-4f05-a222-84ca95a619a0: 'Contact Info' # Contact Info

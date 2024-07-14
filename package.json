@@ -4,8 +4,8 @@
   "description": "Craft 5 Tutorial",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./resources/css/app.css -o ./web/assets/dist/app.css --watch",
-    "build": "npx tailwindcss -i ./resources/css/app.css -o ./web/assets/dist/app.css --minify"
+    "dev": "npx tailwindcss -i ./resources/css/app.css -o ./web/dist/assets/app.css --watch",
+    "build": "npx tailwindcss -i ./resources/css/app.css -o ./web/dist/assets/app.css --minify"
   },
   "keywords": [
     "Craft CMS"

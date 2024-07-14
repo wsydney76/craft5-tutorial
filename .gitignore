@@ -5,6 +5,4 @@
 /node_modules
 /config/license.key
 /templates/test
-/web/cpresources
-/web/transforms
-/web/internal
+/web/dist
