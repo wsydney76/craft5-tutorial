@@ -15,6 +15,7 @@ ddev craft db/restore setup/seed.sql.zip --interactive=0 &&
 ddev craft setup/keys &&
 echo Installing npm packages... &&
 ddev npm install &&
+ddev npm run build &&
 ddev describe &&
 ddev launch
 
