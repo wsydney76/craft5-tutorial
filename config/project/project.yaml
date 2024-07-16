@@ -1,7 +1,7 @@
 assets:
   tempSubpath: temporary-uploads
   tempVolumeUid: efd6d899-7b71-4318-8402-669e92416168
-dateModified: 1721119868
+dateModified: 1721120517
 elementSources:
   craft\elements\Asset:
     -
@@ -19,19 +19,6 @@ elementSources:
         - 'field:560e7c36-f763-440f-b9b5-1d87228bc6df' # Untranslatable Short Text
         - dateModified
         - link
-      type: native
-    -
-      defaultSort:
-        - dateCreated
-        - desc
-      disabled: false
-      key: 'volume:efd6d899-7b71-4318-8402-669e92416168'
-      tableAttributes:
-        - filename
-        - kind
-        - imageSize
-        - size
-        - dateModified
       type: native
     -
       heading: Work
@@ -109,6 +96,24 @@ elementSources:
         - imageSize
         - location
       type: custom
+    -
+      heading: Internal
+      type: heading
+    -
+      defaultSort:
+        - dateCreated
+        - desc
+      disabled: false
+      key: 'volume:485a8101-3d38-4df7-a80f-90faf1dfa6dc' # CP Files
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - link
+      type: native
+    -
+      key: 'folder:88cfbbcc-ae2f-4a9d-b7ad-eb710f360868'
+      type: native
   craft\elements\Entry:
     -
       defaultSort:
