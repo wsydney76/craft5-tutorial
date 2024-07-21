@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .full-width {
+    @apply ml-[calc(50%-50vw)] mr-[calc(50%-50vw)];
+  }
+}

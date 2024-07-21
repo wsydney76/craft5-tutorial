@@ -1,0 +1,30 @@
+{% from '_macros/lib.twig' import img %}
+{% from '_macros/lib.twig' import copyrightOverlay %}
+
+{% set image = entry.image.one %}
+
+{% if image %}
+    {% set darken = entry.darken ?? false %}
+    {% set tag = entry.captionTag.value ?? 'div' %}
+
+
+    <figure class="relative full-width">
+        {# TODO: Responsive image #}
+        {{ img(image, {
+            transform: craft.app.config.custom.fullWidthImageTransform,
+        }) }}
+
+        {% if entry.caption %}
+            <div class="absolute not-prose inset-0 flex justify-center items-center {{ darken ? 'bg-black/30' }}">
+
+                {{ tag(tag, {
+                    class: "text-white font-semibold text-2xl lg:text-5xl tracking-wider",
+                    text: entry.caption
+                }) }}
+
+            </div>
+        {% endif %}
+
+        {{ copyrightOverlay(image.copyright) }}
+    </figure>
+{% endif %}

@@ -8,16 +8,20 @@
 
 {% set transforms = {
     default: {width: 1024, height: fullHeight ? null : 440},
+    slim: {width: 1024, height: fullHeight ? null : 440},
     wide: {width: 1024, height: fullHeight ? null : 440},
     wider: {width: 1024, height: fullHeight ? null : 440},
+    max: {width: 1200, height: fullHeight ? null : 440},
     full: {width: 2000, height: fullHeight ? null : 440}
 } %}
 
+
 {% set classes = {
     default: '',
-    wide: 'lg:-mx-12',
-    wider: 'lg:-mx-24',
-    full: 'ml-[calc(50%-50vw)] mr-[calc(50%-50vw)] px-24'
+    wide: 'lg:-mx-24',
+    max: 'xl:-mx-52 lg:-mx-20',
+    full: 'full-width',
+    slim: 'lg:mx-24'
 } %}
 
 
@@ -45,7 +49,7 @@ Only measuring with real world data will tell.
 
         {# Add caption if one of caption or image copyright is present #}
         {% if entry.caption or image.copyright %}
-            <figcaption class="max-w-screen-2xl mx-auto flex justify-between">
+            <figcaption class="max-w-screen-2xl mx-auto flex justify-between {{ width == 'full' ? 'px-4' }}">
 
                 <div>
                     {{ entry.caption }}

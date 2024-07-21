@@ -1,0 +1,17 @@
+columnSuffix: null
+handle: bgColor
+instructions: null
+name: 'Background Color'
+searchable: false
+settings:
+  defaultColor: null
+  presets:
+    - '#e2e8f0'
+    - '#bfdbfe'
+    - '#bae6fd'
+    - '#bbf7d0'
+    - '#fecaca'
+    - '#fed7aa'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Color

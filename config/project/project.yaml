@@ -1,7 +1,7 @@
 assets:
   tempSubpath: temporary-uploads
   tempVolumeUid: efd6d899-7b71-4318-8402-669e92416168
-dateModified: 1721500194
+dateModified: 1721584233
 elementSources:
   craft\elements\Asset:
     -
@@ -260,6 +260,7 @@ meta:
     10877b5b-ab25-4e80-b0c0-74947be617eb: 'Block Type' # Block Type
     28936a62-e46c-49e0-ba33-fb8ff66bb3ac: Item # Item
     93372f33-2be3-4f89-9466-9ac943a3ea17: Toggle # Toggle
+    94570a8f-b459-4291-a5ad-5cebba495b23: 'Full Width Image' # Full Width Image
     763955f3-df9e-4052-ac07-2ac51d4cf621: 'Column Wrapper Left' # Column Wrapper Left
     a4a0dfdc-289d-4d50-baae-6a3215a85701: Text # Text
     a7f4b9fd-a554-4545-af32-3b57544c9432: 'Site Info - Global Settings' # Site Info - Global Settings
@@ -272,9 +273,12 @@ meta:
     b8b190d9-515e-4173-a718-1c221741d34c: Links # Links
     c2c572b1-9642-40f2-9fe4-cd14bcd186d3: Links # Links
     c9a4fbad-6ca0-4e20-ba72-da2c14a38190: Images # Images
+    cc29043c-ee3c-4afa-b50a-48728bb71115: 'Caption Tag' # Caption Tag
     d5adf46d-5753-4fad-9646-825eb5702f7b: 'Column Wrapper Right' # Column Wrapper Right
     d677cfc7-0f5b-4b30-a88c-5a25daa5fbf5: 'Infobox Type' # Infobox Type
     dfec43e9-1949-4be3-bcfa-eeb2f8511b91: Email # Email
+    e4c5d3c4-17ab-43a4-b29c-85a19e1992d2: 'Background Color' # Background Color
+    e4fb909a-1304-48ce-8fff-3b71f3a0275d: 'Background Color Width' # Background Color Width
     eb230d0c-f88a-40de-a743-994de14eb8f8: Style # Style
     f058efdf-af3b-4948-9dd7-914ea547cce8: 'Entry with URL' # Entry with URL
     f37b0bab-9cb9-4695-b431-f05d5e3bd8da: 'Single Line Text' # Single Line Text

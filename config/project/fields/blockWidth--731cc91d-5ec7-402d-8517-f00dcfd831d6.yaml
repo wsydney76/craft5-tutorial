@@ -20,10 +20,10 @@ settings:
       __assoc__:
         -
           - label
-          - Wide
+          - Slim
         -
           - value
-          - wide
+          - slim
         -
           - default
           - ''
@@ -34,7 +34,18 @@ settings:
           - Wider
         -
           - value
-          - wider
+          - wide
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Full content width (like post image)'
+        -
+          - value
+          - max
         -
           - default
           - ''

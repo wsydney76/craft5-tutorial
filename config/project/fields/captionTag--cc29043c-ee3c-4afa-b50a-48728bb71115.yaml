@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: columnSpan
-instructions: null
-name: 'Column Span'
+handle: captionTag
+instructions: 'HTML tag to use for the caption.'
+name: 'Caption Tag'
 searchable: false
 settings:
   options:
@@ -9,10 +9,10 @@ settings:
       __assoc__:
         -
           - label
-          - Half
+          - DIV
         -
           - value
-          - '6'
+          - div
         -
           - default
           - '1'
@@ -20,10 +20,10 @@ settings:
       __assoc__:
         -
           - label
-          - 'One Third'
+          - H2
         -
           - value
-          - '4'
+          - h2
         -
           - default
           - ''
@@ -31,32 +31,10 @@ settings:
       __assoc__:
         -
           - label
-          - 'Two Thirds'
+          - H3
         -
           - value
-          - '8'
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - Quarter
-        -
-          - value
-          - '3'
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - 'Three Quarters'
-        -
-          - value
-          - '9'
+          - h3
         -
           - default
           - ''

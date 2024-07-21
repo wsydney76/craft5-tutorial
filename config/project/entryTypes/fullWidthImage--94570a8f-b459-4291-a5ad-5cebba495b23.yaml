@@ -1,6 +1,6 @@
-color: blue
+color: null
 fieldLayouts:
-  d24c2f3d-3e8b-4557-8be7-8997a801ea28:
+  ffd120fe-033e-4efa-bc7a-e0f592d91137:
     tabs:
       -
         elementCondition: null
@@ -30,113 +30,77 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: be2b9b90-1cdc-4bcd-9965-15e494314721
+            uid: 0465c1d2-3fb8-41f5-85c8-8aa6ff7abe30
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 763955f3-df9e-4052-ac07-2ac51d4cf621 # Column Wrapper Left
+            fieldUid: abb455ba-032b-461d-9c8d-dca9ed3fc7bd # Image
             handle: null
             includeInCards: false
-            instructions: null
-            label: __blank__
+            instructions: 'This image will be expanded to fill the full width of the screen.'
+            label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 06b43f6b-bce2-479f-af02-30a9d5495f34
+            uid: f75657c5-6414-4e36-bacf-0fa4483cabd7
             userCondition: null
             warning: null
-            width: 50
+            width: 25
           -
             elementCondition: null
-            fieldUid: d5adf46d-5753-4fad-9646-825eb5702f7b # Column Wrapper Right
-            handle: null
+            fieldUid: f37b0bab-9cb9-4695-b431-f05d5e3bd8da # Single Line Text
+            handle: caption
             includeInCards: false
             instructions: null
-            label: __blank__
+            label: Caption
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 47899d39-dbc6-40b4-b2b8-ecc70f78b86b
+            uid: 0e326a2c-e957-488a-bb33-b3510c3e96de
             userCondition: null
             warning: null
-            width: 50
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 93372f33-2be3-4f89-9466-9ac943a3ea17 # Toggle
+            handle: darken
+            includeInCards: false
+            instructions: 'Darken the image to make text more readable.'
+            label: Darken
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 372007c8-17c8-40ee-aaa3-f935dc16d859
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: cc29043c-ee3c-4afa-b50a-48728bb71115 # Caption Tag
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ea633397-7868-4e0d-bf13-f857e55f3796
+            userCondition: null
+            warning: null
+            width: 25
         name: Content
-        uid: b470ea7a-f77f-42cd-ade9-16ae81be0254
+        uid: 926a2cdb-6466-407a-be89-0c678368a50d
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: 23ea6fd1-e412-40c0-9c01-d18acd9094c3 # Column Span
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: 'Span of first Column'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 6e8c4df9-3e8b-4fcd-8325-2f9ee246472e
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 731cc91d-5ec7-402d-8517-f00dcfd831d6 # Block Width
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 89c20b2b-11df-4f16-af7f-0fa94e637252
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: e4c5d3c4-17ab-43a4-b29c-85a19e1992d2 # Background Color
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 94a59f2f-a8d1-4279-9103-17061a069579
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: e4fb909a-1304-48ce-8fff-3b71f3a0275d # Background Color Width
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: ae7b1b9f-cfd1-43c1-82e8-c7affe57e7c2
-            userCondition: null
-            warning: null
-            width: 100
-        name: Style
-        uid: bd250ae9-b161-4c52-a7d0-2f134408abb3
-        userCondition: null
-handle: twoColumns
+handle: fullWidthImage
 hasTitleField: false
-icon: table-columns
-name: 'Two Columns'
+icon: images
+name: 'Full Width Image'
 showSlugField: false
 showStatusField: false
 slugTranslationKeyFormat: null

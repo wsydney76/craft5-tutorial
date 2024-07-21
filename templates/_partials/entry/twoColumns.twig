@@ -7,41 +7,84 @@
 {% set leftCols = entry.columnSpan.value ?? 6 %}
 {% set rightCols = 12 - leftCols %}
 
-{% set blockWidth = entry.blockWidth.value ?? 'default' %}
+{% set width = entry.blockWidth.value ?? 'default' %}
 
-{% set blockStyle = {
+{% set bgcolor = entry.bgColor?? '' %}
+{% set bgcolorwidth = entry.bgColorWidth.value ?? 'default' %}
+
+{% if not bgcolor %}
+    {% set bgcolorwidth = 'default' %}
+{% elseif width == 'full' %}
+    {% set bgcolorwidth = 'full' %}
+{% endif %}
+
+{% set classes = {
     default: '',
     wide: 'lg:-mx-24',
-    wider: 'lg:-mx-48',
-    full: 'alignfull'
+    max: 'xl:-mx-52 lg:-mx-20',
+    full: '',
+    slim: 'lg:mx-24'
 } %}
 
 {% set leftCol = entry.columnWrapperLeft.eagerly().one %}
 {% set rightCol = entry.columnWrapperRight.eagerly().one %}
 
-<div class="grid grid-cols-1 md:grid-cols-12 gap-8 {{ blockStyle[blockWidth] }}">
-    <div class="col-span-1 md:col-span-{{ leftCols }} h-full">
-        {% include '_partials/blocks.twig' with {
-            query: leftCol.columnContent
-        } only %}
+{% set html %}
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+        <div class="col-span-1 md:col-span-{{ leftCols }} h-full">
+            {% include '_partials/blocks.twig' with {
+                query: leftCol.columnContent
+            } only %}
+        </div>
+        <div class="col-span-1 md:col-span-{{ rightCols }} h-full">
+            {% include '_partials/blocks.twig' with {
+                query: rightCol.columnContent
+            } only %}
+        </div>
     </div>
-    <div class="col-span-1 md:col-span-{{ rightCols }} h-full">
-        {% include '_partials/blocks.twig' with {
-            query: rightCol.columnContent
-        } only %}
-    </div>
-</div>
+{% endset %}
 
-{% if blockWidth == 'full' %}
-    {% css %}
-    @media (min-width: 768px) {
-        .alignfull {
-            margin-left: calc(-100vw / 2 + 100% / 2);
-            margin-right: calc(-100vw / 2 + 100% / 2);
-            max-width: 100vw;
-            padding-left: 24px;
-            padding-right: 24px;
-        }
-    }
-    {% endcss %}
+{% if bgcolorwidth == 'default' and (bgcolor or width in ['wide', 'slim', 'max']) %}
+    {# Just one wrapper for extended width and/or background color #}
+    <div class="{{ classes[width] }} {{ bgcolor ? 'p-8' : 'my-8' }}"
+            {% if bgcolor %}
+                style="background-color: {{ bgcolor }}"
+            {% endif %}
+    >
+        {{ html }}
+    </div>
+
+
+
+{% elseif bgcolorwidth == 'default' and width == 'full' and not bgcolor %}
+    {# Full width without background color #}
+    <div class="full-width px-8 my-8">
+        {{ html }}
+    </div>
+
+
+
+{% elseif bgcolorwidth == 'full'  and width == 'full' and bgcolor %}
+    {# Full width with background color #}
+    <div class="full-width p-8" style="background-color: {{ bgcolor }}">
+        {{ html }}
+    </div>
+
+
+{% elseif bgcolorwidth == 'full' and width != 'full' and bgcolor %}
+    {# Constraint width with full background color #}
+    <div class="full-width p-8" style="background-color: {{ bgcolor }}">
+        <div class="max-w-screen-md mx-auto">
+            <div class="{{ classes[width] }}">
+                {{ html }}
+            </div>
+        </div>
+    </div>
+
+{% else %}
+    {# normal flow #}
+    <div class="my-8">
+        {{ html }}
+    </div>
+
 {% endif %}
