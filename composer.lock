@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c243795c69490e62428ea7a7cb7cbce6",
+    "content-hash": "bfaac0e8822e42fc1b332e13358efc91",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -134,11 +134,11 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v2.2.1",
+            "version": "v2.2.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/3e679cd280169109ab6f9d7bff0d069e14d309ac",
-                "reference": "3e679cd280169109ab6f9d7bff0d069e14d309ac",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/4d23e46ea32534268ea121453c93ceda2bc3ee69",
+                "reference": "4d23e46ea32534268ea121453c93ceda2bc3ee69",
                 "shasum": ""
             },
             "require": {
@@ -177,7 +177,7 @@
                 "localization",
                 "postal"
             ],
-            "time": "2024-07-04T15:28:57+00:00"
+            "time": "2024-07-12T11:53:22+00:00"
         },
         {
             "name": "composer/semver",
@@ -233,11 +233,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.2.8",
+            "version": "5.3.0.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/c0a690ae58c795de61edb725460f87d9ddeae292",
-                "reference": "c0a690ae58c795de61edb725460f87d9ddeae292",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/4542d22c4fadcc941a182b9d0aa423c37978716f",
+                "reference": "4542d22c4fadcc941a182b9d0aa423c37978716f",
                 "shasum": ""
             },
             "require": {
@@ -248,7 +248,7 @@
                 "craftcms/server-check": "~5.0.1",
                 "creocoder/yii2-nested-sets": "~0.9.0",
                 "elvanto/litemoji": "~4.3.0",
-                "enshrined/svg-sanitize": "~0.16.0",
+                "enshrined/svg-sanitize": "~0.19.0",
                 "ext-bcmath": "*",
                 "ext-curl": "*",
                 "ext-dom": "*",
@@ -281,10 +281,10 @@
                 "theiconic/name-parser": "^1.2",
                 "twig/twig": "~3.8.0",
                 "voku/stringy": "^6.4.0",
-                "web-auth/webauthn-lib": "~4.8.0",
+                "web-auth/webauthn-lib": "~4.9.0",
                 "webonyx/graphql-php": "~14.11.5",
-                "yiisoft/yii2": "~2.0.50",
-                "yiisoft/yii2-debug": "~2.1.22.0",
+                "yiisoft/yii2": "~2.0.51.0",
+                "yiisoft/yii2-debug": "~2.1.25.0",
                 "yiisoft/yii2-queue": "~2.3.2",
                 "yiisoft/yii2-symfonymailer": "^4.0.0"
             },
@@ -308,10 +308,7 @@
                 "psr-4": {
                     "craft\\": "src/",
                     "yii2tech\\ar\\softdelete\\": "lib/ar-softdelete/src/"
-                },
-                "files": [
-                    "lib/yii2/helpers/ArrayHelper.php"
-                ]
+                }
             },
             "license": [
                 "proprietary"
@@ -337,7 +334,7 @@
                 "docs": "https://craftcms.com/docs/5.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2024-07-17T22:36:44+00:00"
+            "time": "2024-08-06T21:34:36+00:00"
         },
         {
             "name": "craftcms/plugin-installer",
@@ -782,17 +779,16 @@
         },
         {
             "name": "enshrined/svg-sanitize",
-            "version": "0.16.0",
+            "version": "0.19.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/239e257605e2141265b429e40987b2ee51bba4b4",
-                "reference": "239e257605e2141265b429e40987b2ee51bba4b4",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/e95cd17be68e45f523cbfb0fe50cdd891b0cf20e",
+                "reference": "e95cd17be68e45f523cbfb0fe50cdd891b0cf20e",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
-                "ezyang/htmlpurifier": "^4.16",
                 "php": "^5.6 || ^7.0 || ^8.0"
             },
             "type": "library",
@@ -811,7 +807,7 @@
                 }
             ],
             "description": "An SVG sanitizer for PHP",
-            "time": "2023-03-20T10:51:12+00:00"
+            "time": "2024-06-18T10:27:15+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -862,16 +858,16 @@
         },
         {
             "name": "graham-campbell/result-type",
-            "version": "v1.1.2",
+            "version": "v1.1.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/fbd48bce38f73f8a4ec8583362e732e4095e5862",
-                "reference": "fbd48bce38f73f8a4ec8583362e732e4095e5862",
+                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/3ba905c11371512af9d9bdd27d99b782216b6945",
+                "reference": "3ba905c11371512af9d9bdd27d99b782216b6945",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2.5 || ^8.0",
-                "phpoption/phpoption": "^1.9.2"
+                "phpoption/phpoption": "^1.9.3"
             },
             "type": "library",
             "autoload": {
@@ -897,15 +893,15 @@
                 "Result-Type",
                 "result"
             ],
-            "time": "2023-11-12T22:16:48+00:00"
+            "time": "2024-07-20T21:45:45+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.9.1",
+            "version": "7.9.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/a629e5b69db96eb4939c1b34114130077dd4c6fc",
-                "reference": "a629e5b69db96eb4939c1b34114130077dd4c6fc",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/d281ed313b989f213357e3be1a179f02196ac99b",
+                "reference": "d281ed313b989f213357e3be1a179f02196ac99b",
                 "shasum": ""
             },
             "require": {
@@ -991,7 +987,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2024-07-19T16:19:57+00:00"
+            "time": "2024-07-24T11:22:20+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -1137,7 +1133,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v10.48.16",
+            "version": "v10.48.19",
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/collections/zipball/37c863cffb345869dd134eff8e646bc82a19cc96",
@@ -1182,7 +1178,7 @@
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v10.48.16",
+            "version": "v10.48.19",
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/conditionable/zipball/d0958e4741fc9d6f516a552060fd1b829a85e009",
@@ -1218,7 +1214,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v10.48.16",
+            "version": "v10.48.19",
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/contracts/zipball/8d7152c4a1f5d9cf7da3e8b71f23e4556f6138ac",
@@ -1256,7 +1252,12 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v10.48.16",
+            "version": "v10.48.19",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/macroable.git",
+                "reference": "dff667a46ac37b634dcf68909d9d41e94dc97c27"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/macroable/zipball/dff667a46ac37b634dcf68909d9d41e94dc97c27",
@@ -1277,6 +1278,7 @@
                     "Illuminate\\Support\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1288,6 +1290,10 @@
             ],
             "description": "The Illuminate Macroable package.",
             "homepage": "https://laravel.com",
+            "support": {
+                "issues": "https://github.com/laravel/framework/issues",
+                "source": "https://github.com/laravel/framework"
+            },
             "time": "2023-06-05T12:46:42+00:00"
         },
         {
@@ -1740,11 +1746,11 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.9.2",
+            "version": "1.9.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/80735db690fe4fc5c76dfa7f9b770634285fa820",
-                "reference": "80735db690fe4fc5c76dfa7f9b770634285fa820",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/e3fac8b24f56113f7cb96af14958c0dd16330f54",
+                "reference": "e3fac8b24f56113f7cb96af14958c0dd16330f54",
                 "shasum": ""
             },
             "require": {
@@ -1754,7 +1760,7 @@
             "extra": {
                 "bamarni-bin": {
                     "bin-links": true,
-                    "forward-command": true
+                    "forward-command": false
                 },
                 "branch-alias": {
                     "dev-master": "1.9-dev"
@@ -1787,7 +1793,7 @@
                 "php",
                 "type"
             ],
-            "time": "2023-11-12T21:59:55+00:00"
+            "time": "2024-07-20T21:41:07+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
@@ -2756,11 +2762,11 @@
         },
         {
             "name": "symfony/http-client",
-            "version": "v6.4.9",
+            "version": "v6.4.10",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client/zipball/6e9db0025db565bcf8f1d46ed734b549e51e6045",
-                "reference": "6e9db0025db565bcf8f1d46ed734b549e51e6045",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/b5e498f763e0bf5eed8dcd946e50a3b3f71d4ded",
+                "reference": "b5e498f763e0bf5eed8dcd946e50a3b3f71d4ded",
                 "shasum": ""
             },
             "require": {
@@ -2807,7 +2813,7 @@
             "keywords": [
                 "http"
             ],
-            "time": "2024-06-28T07:59:05+00:00"
+            "time": "2024-07-15T09:26:24+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -3475,11 +3481,11 @@
         },
         {
             "name": "symfony/process",
-            "version": "v7.1.1",
+            "version": "v7.1.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/febf90124323a093c7ee06fdb30e765ca3c20028",
-                "reference": "febf90124323a093c7ee06fdb30e765ca3c20028",
+                "url": "https://api.github.com/repos/symfony/process/zipball/7f2f542c668ad6c313dc4a5e9c3321f733197eca",
+                "reference": "7f2f542c668ad6c313dc4a5e9c3321f733197eca",
                 "shasum": ""
             },
             "require": {
@@ -3509,7 +3515,7 @@
             ],
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
-            "time": "2024-05-31T14:57:53+00:00"
+            "time": "2024-07-26T12:44:47+00:00"
         },
         {
             "name": "symfony/property-access",
@@ -3563,11 +3569,11 @@
         },
         {
             "name": "symfony/property-info",
-            "version": "v7.1.2",
+            "version": "v7.1.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-info/zipball/d7b91e4aa07e822a9b935fc29a7254c12d502f16",
-                "reference": "d7b91e4aa07e822a9b935fc29a7254c12d502f16",
+                "url": "https://api.github.com/repos/symfony/property-info/zipball/88a279df2db5b7919cac6f35d6a5d1d7147e6a9b",
+                "reference": "88a279df2db5b7919cac6f35d6a5d1d7147e6a9b",
                 "shasum": ""
             },
             "require": {
@@ -3613,15 +3619,15 @@
                 "type",
                 "validator"
             ],
-            "time": "2024-06-26T07:21:35+00:00"
+            "time": "2024-07-26T07:36:36+00:00"
         },
         {
             "name": "symfony/serializer",
-            "version": "v6.4.9",
+            "version": "v6.4.10",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/serializer/zipball/56ce31d19127e79647ac53387c7555bdcd5730ce",
-                "reference": "56ce31d19127e79647ac53387c7555bdcd5730ce",
+                "url": "https://api.github.com/repos/symfony/serializer/zipball/9a67fcf320561e96f94d62bbe0e169ac534a5718",
+                "reference": "9a67fcf320561e96f94d62bbe0e169ac534a5718",
                 "shasum": ""
             },
             "require": {
@@ -3664,7 +3670,7 @@
             ],
             "description": "Handles serializing and deserializing data structures, including object graphs, into array structures or other formats like XML and JSON.",
             "homepage": "https://symfony.com",
-            "time": "2024-06-28T07:59:05+00:00"
+            "time": "2024-07-26T13:13:26+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -3728,11 +3734,11 @@
         },
         {
             "name": "symfony/string",
-            "version": "v7.1.2",
+            "version": "v7.1.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/14221089ac66cf82e3cf3d1c1da65de305587ff8",
-                "reference": "14221089ac66cf82e3cf3d1c1da65de305587ff8",
+                "url": "https://api.github.com/repos/symfony/string/zipball/ea272a882be7f20cad58d5d78c215001617b7f07",
+                "reference": "ea272a882be7f20cad58d5d78c215001617b7f07",
                 "shasum": ""
             },
             "require": {
@@ -3780,7 +3786,7 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2024-06-28T09:27:18+00:00"
+            "time": "2024-07-22T10:25:37+00:00"
         },
         {
             "name": "symfony/type-info",
@@ -3886,11 +3892,11 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v5.4.40",
+            "version": "v5.4.42",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/af8868a6e9d6082dfca11f1a1f205ae93a8b6d93",
-                "reference": "af8868a6e9d6082dfca11f1a1f205ae93a8b6d93",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/0c17c56d8ea052fc33942251c75d0e28936e043d",
+                "reference": "0c17c56d8ea052fc33942251c75d0e28936e043d",
                 "shasum": ""
             },
             "require": {
@@ -3940,7 +3946,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2024-05-31T14:33:22+00:00"
+            "time": "2024-07-26T12:23:09+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -4074,18 +4080,18 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v5.6.0",
+            "version": "v5.6.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2cf9fb6054c2bb1d59d1f3817706ecdb9d2934c4",
-                "reference": "2cf9fb6054c2bb1d59d1f3817706ecdb9d2934c4",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/a59a13791077fe3d44f90e7133eb68e7d22eaff2",
+                "reference": "a59a13791077fe3d44f90e7133eb68e7d22eaff2",
                 "shasum": ""
             },
             "require": {
                 "ext-pcre": "*",
-                "graham-campbell/result-type": "^1.1.2",
+                "graham-campbell/result-type": "^1.1.3",
                 "php": "^7.2.5 || ^8.0",
-                "phpoption/phpoption": "^1.9.2",
+                "phpoption/phpoption": "^1.9.3",
                 "symfony/polyfill-ctype": "^1.24",
                 "symfony/polyfill-mbstring": "^1.24",
                 "symfony/polyfill-php80": "^1.24"
@@ -4097,7 +4103,7 @@
             "extra": {
                 "bamarni-bin": {
                     "bin-links": true,
-                    "forward-command": true
+                    "forward-command": false
                 },
                 "branch-alias": {
                     "dev-master": "5.6-dev"
@@ -4129,7 +4135,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2023-11-12T22:43:29+00:00"
+            "time": "2024-07-20T21:52:34+00:00"
         },
         {
             "name": "voku/anti-xss",
@@ -4570,102 +4576,41 @@
             "time": "2024-07-18T08:47:32+00:00"
         },
         {
-            "name": "web-auth/metadata-service",
-            "version": "4.8.7",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/web-auth/webauthn-metadata-service/zipball/64b65c91c0e4e9a299abab3f83f6f4f20c058f0a",
-                "reference": "64b65c91c0e4e9a299abab3f83f6f4f20c058f0a",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "lcobucci/clock": "^2.2|^3.0",
-                "paragonie/constant_time_encoding": "^2.6",
-                "php": ">=8.1",
-                "psr/clock": "^1.0",
-                "psr/event-dispatcher": "^1.0",
-                "psr/http-client": "^1.0",
-                "psr/http-factory": "^1.0",
-                "psr/log": "^1.0|^2.0|^3.0",
-                "spomky-labs/pki-framework": "^1.0",
-                "symfony/deprecation-contracts": "^3.2"
-            },
-            "suggest": {
-                "phpdocumentor/reflection-docblock": "As of 4.5.x, the phpdocumentor/reflection-docblock component will become mandatory for converting objects such as the Metadata Statement",
-                "psr/clock-implementation": "As of 4.5.x, the PSR Clock implementation will replace lcobucci/clock",
-                "psr/log-implementation": "Recommended to receive logs from the library",
-                "symfony/property-access": "As of 4.5.x, the symfony/serializer component will become mandatory for converting objects such as the Metadata Statement",
-                "symfony/property-info": "As of 4.5.x, the symfony/serializer component will become mandatory for converting objects such as the Metadata Statement",
-                "symfony/serializer": "As of 4.5.x, the symfony/serializer component will become mandatory for converting objects such as the Metadata Statement",
-                "web-token/jwt-library": "Mandatory for fetching Metadata Statement from distant sources"
-            },
-            "type": "library",
-            "extra": {
-                "thanks": {
-                    "name": "web-auth/webauthn-framework",
-                    "url": "https://github.com/web-auth/webauthn-framework"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Webauthn\\MetadataService\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Florent Morselli",
-                    "homepage": "https://github.com/Spomky"
-                },
-                {
-                    "name": "All contributors",
-                    "homepage": "https://github.com/web-auth/metadata-service/contributors"
-                }
-            ],
-            "description": "Metadata Service for FIDO2/Webauthn",
-            "homepage": "https://github.com/web-auth",
-            "keywords": [
-                "FIDO2",
-                "fido",
-                "webauthn"
-            ],
-            "time": "2024-06-15T07:18:26+00:00"
-        },
-        {
             "name": "web-auth/webauthn-lib",
-            "version": "4.8.7",
+            "version": "4.9.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-auth/webauthn-lib/zipball/925873eb504a1db8a77dc2b4d2b578334736fa16",
-                "reference": "925873eb504a1db8a77dc2b4d2b578334736fa16",
+                "url": "https://api.github.com/repos/web-auth/webauthn-lib/zipball/fd7a0943c663b325e92ad562c2bcc943e77beeac",
+                "reference": "fd7a0943c663b325e92ad562c2bcc943e77beeac",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-mbstring": "*",
                 "ext-openssl": "*",
-                "paragonie/constant_time_encoding": "^2.6",
+                "lcobucci/clock": "^2.2|^3.0",
+                "paragonie/constant_time_encoding": "^2.6|^3.0",
                 "php": ">=8.1",
+                "psr/clock": "^1.0",
                 "psr/event-dispatcher": "^1.0",
                 "psr/http-client": "^1.0",
                 "psr/http-factory": "^1.0",
                 "psr/log": "^1.0|^2.0|^3.0",
                 "spomky-labs/cbor-php": "^3.0",
+                "spomky-labs/pki-framework": "^1.0",
+                "symfony/deprecation-contracts": "^3.2",
                 "symfony/uid": "^6.1|^7.0",
-                "web-auth/cose-lib": "^4.2.3",
-                "web-auth/metadata-service": "4.8.7"
+                "web-auth/cose-lib": "^4.2.3"
             },
             "suggest": {
                 "phpdocumentor/reflection-docblock": "As of 4.5.x, the phpdocumentor/reflection-docblock component will become mandatory for converting objects such as the Metadata Statement",
+                "psr/clock-implementation": "As of 4.5.x, the PSR Clock implementation will replace lcobucci/clock",
                 "psr/log-implementation": "Recommended to receive logs from the library",
                 "symfony/event-dispatcher": "Recommended to use dispatched events",
                 "symfony/property-access": "As of 4.5.x, the symfony/serializer component will become mandatory for converting objects such as the Metadata Statement",
                 "symfony/property-info": "As of 4.5.x, the symfony/serializer component will become mandatory for converting objects such as the Metadata Statement",
                 "symfony/serializer": "As of 4.5.x, the symfony/serializer component will become mandatory for converting objects such as the Metadata Statement",
-                "web-token/jwt-library": "Mandatory for the AndroidSafetyNet Attestation Statement support"
+                "web-token/jwt-library": "Mandatory for fetching Metadata Statement from distant sources"
             },
             "type": "library",
             "extra": {
@@ -4699,7 +4644,7 @@
                 "fido",
                 "webauthn"
             ],
-            "time": "2024-04-08T10:04:23+00:00"
+            "time": "2024-07-16T18:36:36+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -4923,11 +4868,11 @@
         },
         {
             "name": "yiisoft/yii2-debug",
-            "version": "2.1.22",
+            "version": "2.1.25",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/c0fa388c56b64edfb92987fdcc37d7a0243170d7",
-                "reference": "c0fa388c56b64edfb92987fdcc37d7a0243170d7",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/4d011b9bfc83bde71cde43c9f6837f5a74685ea7",
+                "reference": "4d011b9bfc83bde71cde43c9f6837f5a74685ea7",
                 "shasum": ""
             },
             "require": {
@@ -4976,7 +4921,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2022-11-18T17:29:27+00:00"
+            "time": "2023-09-26T15:50:00+00:00"
         },
         {
             "name": "yiisoft/yii2-queue",
@@ -5391,11 +5336,11 @@
         },
         {
             "name": "symfony/console",
-            "version": "v6.4.9",
+            "version": "v6.4.10",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/6edb5363ec0c78ad4d48c5128ebf4d083d89d3a9",
-                "reference": "6edb5363ec0c78ad4d48c5128ebf4d083d89d3a9",
+                "url": "https://api.github.com/repos/symfony/console/zipball/504974cbe43d05f83b201d6498c206f16fc0cdbc",
+                "reference": "504974cbe43d05f83b201d6498c206f16fc0cdbc",
                 "shasum": ""
             },
             "require": {
@@ -5445,7 +5390,7 @@
                 "console",
                 "terminal"
             ],
-            "time": "2024-06-28T09:49:33+00:00"
+            "time": "2024-07-26T12:30:32+00:00"
         },
         {
             "name": "yiisoft/yii2-shell",
@@ -5502,7 +5447,7 @@
     "platform": [],
     "platform-dev": [],
     "platform-overrides": {
-        "php": "8.2"
+        "php": "8.3"
     },
     "plugin-api-version": "2.6.0"
 }

@@ -7,6 +7,7 @@ tabs:
         autocomplete: false
         autocorrect: true
         class: null
+        dateAdded: '2024-08-07T12:02:47+02:00'
         disabled: false
         elementCondition: null
         id: null
@@ -37,6 +38,7 @@ tabs:
         autocomplete: false
         autocorrect: true
         class: null
+        dateAdded: '2024-08-07T12:02:47+02:00'
         disabled: false
         elementCondition: null
         id: null
@@ -63,6 +65,7 @@ tabs:
         warning: null
         width: 100
       -
+        dateAdded: '2024-08-07T12:02:47+02:00'
         elementCondition: null
         id: null
         includeInCards: false
@@ -82,6 +85,7 @@ tabs:
         autocomplete: false
         autocorrect: true
         class: null
+        dateAdded: '2024-08-07T12:02:47+02:00'
         disabled: false
         elementCondition: null
         id: null

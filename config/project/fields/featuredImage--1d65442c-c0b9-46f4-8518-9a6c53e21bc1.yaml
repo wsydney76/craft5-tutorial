@@ -12,7 +12,6 @@ settings:
   branchLimit: null
   defaultUploadLocationSource: 'volume:c9a4fbad-6ca0-4e20-ba72-da2c14a38190' # Images
   defaultUploadLocationSubpath: featured
-  localizeRelations: false
   maintainHierarchy: false
   maxRelations: 1
   minRelations: null
@@ -67,5 +66,5 @@ settings:
   validateRelatedElements: true
   viewMode: cards
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: craft\fields\Assets

@@ -11,6 +11,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2024-08-07T12:02:47+02:00'
             disabled: false
             elementCondition: null
             id: null
@@ -39,6 +40,7 @@ fieldLayouts:
             attribute: alt
             class: null
             cols: null
+            dateAdded: '2024-08-07T12:02:47+02:00'
             disabled: false
             elementCondition: null
             id: null
@@ -61,6 +63,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-08-07T12:02:47+02:00'
             elementCondition: null
             fieldUid: 560e7c36-f763-440f-b9b5-1d87228bc6df # Untranslatable Short Text
             handle: copyright
@@ -76,6 +79,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-08-07T12:02:47+02:00'
             elementCondition: null
             template: _cp/related-entries
             type: craft\fieldlayoutelements\Template

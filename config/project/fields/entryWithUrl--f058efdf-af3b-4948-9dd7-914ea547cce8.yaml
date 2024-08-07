@@ -6,7 +6,6 @@ searchable: true
 settings:
   allowSelfRelations: false
   branchLimit: null
-  localizeRelations: false
   maintainHierarchy: false
   maxRelations: 1
   minRelations: null
@@ -43,5 +42,5 @@ settings:
   validateRelatedElements: false
   viewMode: cards
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: craft\fields\Entries
