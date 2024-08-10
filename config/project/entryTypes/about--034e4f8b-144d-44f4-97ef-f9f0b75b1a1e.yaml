@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-08-07T12:02:47+02:00'
+            dateAdded: '2024-08-10T09:52:13+02:00'
             disabled: false
             elementCondition: null
             id: null
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-08-07T12:02:47+02:00'
+            dateAdded: '2024-08-10T09:52:13+02:00'
             elementCondition: null
             fieldUid: 1d65442c-c0b9-46f4-8518-9a6c53e21bc1 # Featured Image
             handle: null
@@ -52,7 +52,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-08-07T12:02:47+02:00'
+            dateAdded: '2024-08-10T09:52:13+02:00'
             elementCondition: null
             fieldUid: 5cb55ed0-9e56-41b5-bf18-74c46a5c1b5f # Contact Info
             handle: null
@@ -68,7 +68,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-08-07T12:02:47+02:00'
+            dateAdded: '2024-08-10T09:52:13+02:00'
             elementCondition: null
             fieldUid: 95f98672-9562-44a0-8639-92d2b55ceeb6 # Body Content
             handle: null

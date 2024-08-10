@@ -35,11 +35,17 @@
       "@php craft on"
     ]
   },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "repositories": [
     {
       "type": "composer",
       "url": "https://composer.craftcms.com",
       "canonical": false
+    },
+    {
+      "type": "path",
+      "url": "/var/www/plugins/extras"
     }
   ]
 }

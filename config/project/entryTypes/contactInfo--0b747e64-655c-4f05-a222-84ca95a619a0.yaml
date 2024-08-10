@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-08-07T12:02:47+02:00'
+            dateAdded: '2024-08-10T09:52:13+02:00'
             disabled: false
             elementCondition: null
             id: null
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-08-07T12:02:47+02:00'
+            dateAdded: '2024-08-10T09:52:13+02:00'
             elementCondition: null
             fieldUid: dfec43e9-1949-4be3-bcfa-eeb2f8511b91 # Email
             handle: null
@@ -52,7 +52,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-08-07T12:02:47+02:00'
+            dateAdded: '2024-08-10T09:52:13+02:00'
             elementCondition: null
             fieldUid: 560e7c36-f763-440f-b9b5-1d87228bc6df # Untranslatable Short Text
             handle: telephone
@@ -68,7 +68,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            dateAdded: '2024-08-07T12:02:47+02:00'
+            dateAdded: '2024-08-10T09:52:13+02:00'
             elementCondition: null
             fieldUid: 560e7c36-f763-440f-b9b5-1d87228bc6df # Untranslatable Short Text
             handle: telephoneMobile
@@ -84,7 +84,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            dateAdded: '2024-08-07T12:02:47+02:00'
+            dateAdded: '2024-08-10T09:52:13+02:00'
             elementCondition: null
             fieldUid: 9e49c3cc-51f3-4bc0-ab6a-ecde20fcb06c # Social Media
             handle: null
