@@ -6,7 +6,7 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            dateAdded: '2024-09-05T08:28:19+02:00'
+            dateAdded: '2024-09-07T09:59:24+02:00'
             elementCondition: null
             template: _cp/drafts
             type: craft\fieldlayoutelements\Template
@@ -18,7 +18,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-09-05T08:28:19+02:00'
+            dateAdded: '2024-09-07T09:59:24+02:00'
             disabled: false
             elementCondition: null
             id: null
@@ -44,7 +44,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-09-05T08:28:19+02:00'
+            dateAdded: '2024-09-07T09:59:24+02:00'
             elementCondition: null
             fieldUid: f37b0bab-9cb9-4695-b431-f05d5e3bd8da # Single Line Text
             handle: subheading
@@ -60,7 +60,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-09-05T08:28:19+02:00'
+            dateAdded: '2024-09-07T09:59:24+02:00'
             elementCondition: null
             fieldUid: 1d65442c-c0b9-46f4-8518-9a6c53e21bc1 # Featured Image
             handle: null
@@ -76,7 +76,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            dateAdded: '2024-09-05T08:28:19+02:00'
+            dateAdded: '2024-09-07T09:59:24+02:00'
             elementCondition: null
             fieldUid: 2ac14555-67e9-455b-9337-b07a50478276 # Topics
             handle: null
@@ -92,7 +92,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            dateAdded: '2024-09-05T08:28:19+02:00'
+            dateAdded: '2024-09-07T09:59:24+02:00'
             elementCondition: null
             fieldUid: 95f98672-9562-44a0-8639-92d2b55ceeb6 # Body Content
             handle: null
