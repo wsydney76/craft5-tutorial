@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-09-12T09:35:29+02:00'
+            dateAdded: '2024-09-12T09:45:42+02:00'
             disabled: false
             elementCondition: null
             id: null
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-09-12T09:35:29+02:00'
+            dateAdded: '2024-09-12T09:45:42+02:00'
             elementCondition: null
             fieldUid: f232290f-f45b-4537-95e4-353f7e6f6301 # Web Page Url
             handle: externalUrl
@@ -52,7 +52,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            dateAdded: '2024-09-12T09:35:29+02:00'
+            dateAdded: '2024-09-12T09:45:42+02:00'
             elementCondition: null
             fieldUid: f37b0bab-9cb9-4695-b431-f05d5e3bd8da # Single Line Text
             handle: caption
@@ -68,7 +68,7 @@ fieldLayouts:
             warning: null
             width: 25
           -
-            dateAdded: '2024-09-12T09:35:29+02:00'
+            dateAdded: '2024-09-12T09:45:42+02:00'
             elementCondition: null
             fieldUid: 93372f33-2be3-4f89-9466-9ac943a3ea17 # Toggle
             handle: openInNewTab

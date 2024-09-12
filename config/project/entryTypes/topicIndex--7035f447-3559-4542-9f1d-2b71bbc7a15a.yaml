@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-09-12T09:35:29+02:00'
+            dateAdded: '2024-09-12T09:45:42+02:00'
             disabled: false
             elementCondition: null
             id: null
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-09-12T09:35:29+02:00'
+            dateAdded: '2024-09-12T09:45:42+02:00'
             elementCondition: null
             fieldUid: 1d65442c-c0b9-46f4-8518-9a6c53e21bc1 # Featured Image
             handle: null
@@ -52,7 +52,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-09-12T09:35:29+02:00'
+            dateAdded: '2024-09-12T09:45:42+02:00'
             dismissible: true
             elementCondition: null
             style: tip
