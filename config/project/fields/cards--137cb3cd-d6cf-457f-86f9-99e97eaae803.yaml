@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: cards
+instructions: null
+name: Cards
+searchable: true
+settings:
+  createButtonLabel: 'New card'
+  entryTypes:
+    - cb815acf-ad25-4960-af48-9d27e1080859 # Entry Card
+    - 7b4f8427-fbf6-4d53-94e4-31fe2b0d13e4 # Manual Card
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

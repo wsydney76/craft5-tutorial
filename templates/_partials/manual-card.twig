@@ -1,0 +1,18 @@
+{% embed '_layouts/partials/card.twig' with {
+    heading,
+    image: imageQuery
+        .eagerly()
+        .withTransforms([craft.app.config.custom.cardTransform])
+    .one ??
+    siteInfo.featuredImage.one,
+    url
+}  %}
+
+    {% block content %}
+        {% if text is defined and text %}
+            <div>
+                {{ text }}
+            </div>
+        {% endif %}
+    {% endblock %}
+{% endembed %}

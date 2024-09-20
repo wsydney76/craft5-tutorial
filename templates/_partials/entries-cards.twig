@@ -13,29 +13,11 @@
             {% for entry in entries %}
 
                 {# Use embed for consistent card layout #}
-                {% embed '_layouts/partials/card.twig' with {
-                    image: entry.featuredImage
-                        .eagerly()
-                        .withTransforms([craft.app.config.custom.cardTransform])
-                    .one ??
-                    siteInfo.featuredImage.one,
-                    url: entry.url
-                } %}
-                    {% block content %}
-                        <div class="font-semibold text-lg">{{ entry.title }}</div>
 
-                        {% set block = entry.bodyContent.type('text').eagerly().one %}
-                        {% if block %}
-                            <div class="mt-2 text-sm">
-                                {#
-                                The truncated first text block. 
-                                Avoid showing markdown stuff or invalid html tags.
-                                #}
-                                {{ block.text|md|striptags|truncate(120) }}
-                            </div>
-                        {% endif %}
-                    {% endblock %}
-                {% endembed %}
+                {% include '_partials/entry-card.twig' with {
+                	entry
+                } only %}
+
             {% endfor %}
         {% endblock %}
     {% endembed %}

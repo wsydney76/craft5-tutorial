@@ -1,0 +1,36 @@
+{% embed '_layouts/partials/card.twig' with {
+    heading: entry.title,
+    image: entry.featuredImage
+        .eagerly()
+        .withTransforms([craft.app.config.custom.cardTransform])
+    .one ??
+    siteInfo.featuredImage.one,
+    url: entry.url
+} %}
+    {% block content %}
+        {% set block = entry.bodyContent.type('text').eagerly().one %}
+        {% if block %}
+            <div class="">
+                {#
+                The truncated first text block.
+                Avoid showing markdown stuff or invalid html tags.
+                #}
+                {{ block.text|md|striptags|truncate(120) }}
+            </div>
+        {% endif %}
+
+        {# Include section/entry type specific content #}
+        {% if entry is defined %}
+            {% include [
+                "_entries/#{entry.section.handle}/types/#{entry.type.handle}/card-content.twig",
+                "_entries/#{entry.section.handle}/card-content.twig",
+            ] ignore missing with {
+                entry
+            } only %}
+        {% endif %}
+
+    {% endblock %}
+
+
+
+{% endembed %}

@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  1f795f65-54f6-434b-8f69-55a8b48b47e5:
+  d678cf4a-c73f-4699-b46d-02a52dde144d:
     tabs:
       -
         elementCondition: null
@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-09-20T19:11:39+02:00'
+            dateAdded: '2024-09-20T07:49:17+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -31,33 +31,33 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: cf78badd-1d49-472b-9548-8d0e3e4dc996
+            uid: b5b8a800-5b67-4e32-9c0f-2ceab097c44b
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-09-20T19:11:39+02:00'
+            dateAdded: '2024-09-20T07:51:17+00:00'
             elementCondition: null
-            fieldUid: 17ebe26e-858c-47f1-99d0-d010214c0afc # Accordion Items
-            handle: null
+            fieldUid: f058efdf-af3b-4948-9dd7-914ea547cce8 # Entry with URL
+            handle: entry
             includeInCards: false
             instructions: null
             label: __blank__
             providesThumbs: false
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 6f3e41b0-afa0-42ee-bc0f-2f8fe5fbac34
+            uid: 7afb74d5-93df-4795-8bdd-676b2ce46603
             userCondition: null
             warning: null
-            width: 100
+            width: 50
         name: Content
-        uid: c50d9275-0953-45ba-89c0-57c1a6e197c1
+        uid: 8f61e370-5428-43b8-88a2-330c8a996d5c
         userCondition: null
-handle: accordion
+handle: entryCard
 hasTitleField: false
-icon: bars
-name: Accordion
+icon: newspaper
+name: 'Entry Card'
 showSlugField: false
 showStatusField: false
 slugTranslationKeyFormat: null

@@ -1,0 +1,59 @@
+{% set width = entry.blockWidth.value ?? 'default' %}
+{% set cardsPerRow = entry.cardsPerRow.value ?: 3 %}
+
+
+{% set containerClasses = {
+    default: '',
+    wide: 'lg:-mx-24',
+    max: 'xl:-mx-52 lg:-mx-20',
+    full: 'full-width px-4',
+    slim: 'lg:mx-24'
+} %}
+
+{# TODO: Adjust for blockWidth / number or cards #}
+{% set gridClasses  = {
+    1: '',
+    2: 'sm:grid-cols-2',
+    3: 'sm:grid-cols-2 md:grid-cols-3',
+    4: 'sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4',
+    5: 'sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5',
+    6: 'sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6',
+
+} %}
+
+{% set cards = entry.cards.all %}
+
+{% if cards %}
+    <div class="not-prose {{ containerClasses[width] }}">
+        <div class="grid grid-cols-1 gap-4 {{ gridClasses[cardsPerRow] }}">
+
+            {% for card in cards %}
+
+                {% switch card.type.handle %}
+
+                {% case "entryCard" %}
+
+                    {% set relatedEntry = card.entry.eagerly().one %}
+                    {% if relatedEntry %}
+                        {% include '_partials/entry-card.twig' with {
+                            entry: relatedEntry
+                        } only %}
+                    {% endif %}
+
+                {% case "manualCard" %}
+
+                    {% include '_partials/manual-card.twig' with {
+                        imageQuery: card.image,
+                        url: card.externalUrl,
+                        heading: card.heading,
+                        text: card.subheading
+                    } only %}
+
+                {% endswitch %}
+
+
+            {% endfor %}
+
+        </div>
+    </div>
+{% endif %}

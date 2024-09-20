@@ -16,6 +16,7 @@ settings:
     - 9128a883-c73e-4009-b8d5-7971ce954682 # Special
     - 2cea504e-140d-4a1e-8821-171a99ebe4c4 # Two Columns
     - 94570a8f-b459-4291-a5ad-5cebba495b23 # Full Width Image
+    - 304f5ddf-1c72-401d-aabc-12b9225f15fe # Cards
   includeTableView: false
   maxEntries: null
   minEntries: null
