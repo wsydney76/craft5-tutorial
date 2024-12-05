@@ -26,13 +26,9 @@
     }
   },
   "scripts": {
-    "pre-update-cmd": [
-      "@php craft off"
-    ],
     "post-update-cmd": [
       "@php craft clear-caches/all",
-      "@php craft migrate/all --interactive=0",
-      "@php craft on"
+      "@php craft migrate/all --interactive=0"
     ]
   },
   "minimum-stability": "dev",
