@@ -17,6 +17,11 @@ composer_version: "2"
 web_environment: []
 nodejs_version: "20"
 corepack_enable: false
+web_extra_exposed_ports:
+  - name: Vite
+    container_port: 3000
+    http_port: 3001
+    https_port: 3000
 
 # Key features of DDEV's config.yaml:
 

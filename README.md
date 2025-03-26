@@ -36,6 +36,11 @@ We then built a extended version of Craft's official tutorial.
 * Added 'Links'  block as an example for nested matrix entries
 * Added 'Two Columns' block as an example column layout. You may want to change inner blocks editing from 'as inline-editable blocks' to 'as cards' in the `columnWrapperLeft/columnWrapperRight` field settings.
 
+## Tooling upgrades
+
+* Updated to Tailwind CSS 4
+* Moved to Vite based build chain instead of Tailwind CLI.
+
 ### Migration helpers
 
 A couple of CLI commands / Twig templates to help with migration. 

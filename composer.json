@@ -3,6 +3,7 @@
   "require": {
     "craftcms/cms": "^5.3.0",
     "doublesecretagency/craft-cpcss": "^3.0.0",
+    "nystudio107/craft-vite": "^5.0.1",
     "vlucas/phpdotenv": "^5.6.0"
   },
   "require-dev": {
