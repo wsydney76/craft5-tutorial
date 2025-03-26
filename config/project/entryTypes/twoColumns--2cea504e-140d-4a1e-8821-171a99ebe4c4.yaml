@@ -6,36 +6,6 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2024-09-20T09:01:34+00:00'
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: be2b9b90-1cdc-4bcd-9965-15e494314721
-            userCondition: null
-            warning: null
-            width: 100
-          -
             dateAdded: '2024-09-20T09:01:34+00:00'
             elementCondition: null
             fieldUid: 763955f3-df9e-4052-ac07-2ac51d4cf621 # Column Wrapper Left

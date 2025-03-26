@@ -2,7 +2,8 @@
 
 {# @param entry Entry #}
 
-{# Make sure md:col-span-(1-12) classes are safelisted in tailwind.config.js #}
+{# Make sure md:col-span-(1-12) classes are safelisted in templates/_tailwindcss-safelist.twig #}
+
 
 {% set leftCols = entry.columnSpan.value ?? 6 %}
 {% set rightCols = 12 - leftCols %}
@@ -74,7 +75,7 @@
 {% elseif bgcolorwidth == 'full' and width != 'full' and bgcolor %}
     {# Constraint width with full background color #}
     <div class="full-width p-8" style="background-color: {{ bgcolor }}">
-        <div class="max-w-screen-md mx-auto">
+        <div class="max-w-(--breakpoint-md) mx-auto">
             <div class="{{ classes[width] }}">
                 {{ html }}
             </div>

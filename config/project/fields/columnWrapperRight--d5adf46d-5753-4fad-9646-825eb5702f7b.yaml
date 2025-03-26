@@ -5,8 +5,13 @@ name: 'Column Wrapper Right'
 searchable: true
 settings:
   createButtonLabel: null
+  defaultIndexViewMode: cards
   entryTypes:
-    - 21eee455-9690-4518-80ca-22cad003b316 # Right Column
+    -
+      __assoc__:
+        -
+          - uid
+          - 21eee455-9690-4518-80ca-22cad003b316 # Right Column
   includeTableView: false
   maxEntries: 1
   minEntries: 1

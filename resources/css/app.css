@@ -1,9 +1,65 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-@layer utilities {
-    .full-width {
-    @apply ml-[calc(50%-50vw)] mr-[calc(50%-50vw)];
+/* Not automatically discovered by the vite plugin */
+@source "../../templates";
+
+@plugin "@tailwindcss/typography";
+
+@theme {
+    --breakpoint-xl: 1200px;
+
+    --default-transition-duration: 400ms;
+
+    /* Custom colors: gray: colors.slate */
+    --color-gray-50: oklch(0.984 0.003 247.858);
+    --color-gray-100: oklch(0.968 0.007 247.896);
+    --color-gray-200: oklch(0.929 0.013 255.508);
+    --color-gray-300: oklch(0.869 0.022 252.894);
+    --color-gray-400: oklch(0.704 0.04 256.788);
+    --color-gray-500: oklch(0.554 0.046 257.417);
+    --color-gray-600: oklch(0.446 0.043 257.281);
+    --color-gray-700: oklch(0.372 0.044 257.287);
+    --color-gray-800: oklch(0.279 0.041 260.031);
+    --color-gray-900: oklch(0.208 0.042 265.755);
+    --color-gray-950: oklch(0.129 0.042 264.695);
+
+    /* Custom colors: brand: colors.slate */
+    --color-brand-50: oklch(0.984 0.003 247.858);
+    --color-brand-100: oklch(0.968 0.007 247.896);
+    --color-brand-200: oklch(0.929 0.013 255.508);
+    --color-brand-300: oklch(0.869 0.022 252.894);
+    --color-brand-400: oklch(0.704 0.04 256.788);
+    --color-brand-500: oklch(0.554 0.046 257.417);
+    --color-brand-600: oklch(0.446 0.043 257.281);
+    --color-brand-700: oklch(0.372 0.044 257.287);
+    --color-brand-800: oklch(0.279 0.041 260.031);
+    --color-brand-900: oklch(0.208 0.042 265.755);
+    --color-brand-950: oklch(0.129 0.042 264.695);
+
+    /* Custom colors: prose: colors.slate[900] */
+    --color-prose: oklch(0.208 0.042 265.755);
+
+    --tw-prose-bullets: red;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
   }
+}
+
+@utility full-width {
+  @apply ml-[calc(50%-50vw)] mr-[calc(50%-50vw)];
 }

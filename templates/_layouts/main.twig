@@ -19,8 +19,8 @@
     {# let templates decide which page width to use #}
     {% set mainWidth = _globals.get('mainWidth') ?? 'md' %}
     {% set widthClasses = {
-        md: 'max-w-screen-md mx-auto',
-        xl: 'max-w-screen-xl mx-auto'
+        md: 'max-w-(--breakpoint-md) mx-auto',
+        xl: 'max-w-(--breakpoint-xl) mx-auto'
     } %}
 
 {% endapply -%}
@@ -39,7 +39,7 @@
         <a href="#content" class="sr-only focus:not-sr-only">{{ 'Jump to content'|t }}</a>
 
         {# Use semantic html wherever possible #}
-        <header class="mb-8 max-w-screen-xl mx-auto">
+        <header class="mb-8 max-w-(--breakpoint-xl) mx-auto">
 
             {# The top bar #}
             {% include '_layouts/partials/nav.twig' %}
@@ -103,7 +103,7 @@
 
         {# Previous/Next navigation #}
         {% if _globals.get('entryNavCondition') %}
-            <div class="max-w-screen-xl mx-auto">
+            <div class="max-w-(--breakpoint-xl) mx-auto">
                 {% include '_layouts/partials/entry-nav.twig' with {
                     entry,
                     condition: _globals.get('entryNavCondition')

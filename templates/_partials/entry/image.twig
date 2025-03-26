@@ -49,7 +49,7 @@ Only measuring with real world data will tell.
 
         {# Add caption if one of caption or image copyright is present #}
         {% if entry.caption or image.copyright %}
-            <figcaption class="max-w-screen-2xl mx-auto flex justify-between {{ width == 'full' ? 'px-4' }}">
+            <figcaption class="max-w-(--breakpoint-2xl) mx-auto flex justify-between {{ width == 'full' ? 'px-4' }}">
 
                 <div>
                     {{ entry.caption }}

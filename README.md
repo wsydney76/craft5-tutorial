@@ -34,6 +34,7 @@ We then built a extended version of Craft's official tutorial.
 * Use `render()` method for matrix field
 * Use `eagerly()` method for eager loading
 * Added 'Links'  block as an example for nested matrix entries
+* Added 'Two Columns' block as an example column layout. You may want to change inner blocks editing from 'as inline-editable blocks' to 'as cards' in the `columnWrapperLeft/columnWrapperRight` field settings.
 
 ### Migration helpers
 

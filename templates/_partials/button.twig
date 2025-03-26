@@ -18,7 +18,7 @@ We would recommend to avoid it and build properly designed components.
     {% set external = external is defined ? external : false %}
     {% set openInNewTab = openInNewTab is defined ? openInNewTab : false %}
 
-    <a class="overflow-hidden flex group items-center bg-white border border-gray-300 no-underline hover:bg-gray-500 hover:text-white transition-colors shadow-md px-3 py-1.5 rounded"
+    <a class="overflow-hidden flex group items-center bg-white border border-gray-300 no-underline hover:bg-gray-500 hover:text-white transition-colors shadow-md px-3 py-1.5 rounded-sm"
        href="{{ url }}" {{ openInNewTab ? 'target="_blank"' }}>
         {{ caption }}
 
@@ -30,7 +30,7 @@ We would recommend to avoid it and build properly designed components.
 {% case "submit" %}
 
     <button type="submit"
-            class="block bg-brand-700 text-white border border-gray-300 hover:bg-brand-900 transition-colors shadow-md px-3 py-1.5 rounded"
+            class="block bg-brand-700 text-white border border-gray-300 hover:bg-brand-900 transition-colors shadow-md px-3 py-1.5 rounded-sm"
     >{{ caption }}</button>
     
 {% endswitch %}

@@ -5,8 +5,13 @@ name: 'Column Wrapper Left'
 searchable: false
 settings:
   createButtonLabel: null
+  defaultIndexViewMode: cards
   entryTypes:
-    - 6ff70f49-b17c-4c69-9030-a8d48619f08c # Left Column
+    -
+      __assoc__:
+        -
+          - uid
+          - 6ff70f49-b17c-4c69-9030-a8d48619f08c # Left Column
   includeTableView: false
   maxEntries: 1
   minEntries: 1
