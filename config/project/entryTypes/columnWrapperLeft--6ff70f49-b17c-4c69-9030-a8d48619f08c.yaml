@@ -62,6 +62,6 @@ showSlugField: false
 showStatusField: false
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: '{columnContent.count} block(s) {columnContent.type(''heading'').one.text} '
+titleFormat: "{columnContent.count} block(s) {columnContent.type('heading').one.text} "
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
