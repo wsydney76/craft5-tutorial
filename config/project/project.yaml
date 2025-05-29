@@ -1,7 +1,7 @@
 assets:
   tempSubpath: temporary-uploads
   tempVolumeUid: efd6d899-7b71-4318-8402-669e92416168
-dateModified: 1744751377
+dateModified: 1748507362
 elementSources:
   craft\elements\Asset:
     -
@@ -190,10 +190,10 @@ email:
   replyToEmail: null
   template: null
   transportSettings:
-    host: $MAILPIT_SMTP_HOSTNAME
+    host: $SMTP_HOSTNAME
     password: ''
-    port: $MAILPIT_SMTP_PORT
-    useAuthentication: $MAILPIT_USE_AUTHENTICATION
+    port: $SMTP_PORT
+    useAuthentication: $SMTP_USE_AUTHENTICATION
     username: ''
   transportType: craft\mail\transportadapters\Smtp
 fs:
@@ -309,4 +309,4 @@ system:
   name: $SYSTEM_NAME
   retryDuration: null
   schemaVersion: 5.7.0.3
-  timeZone: Europe/Berlin
+  timeZone: $SYSTEM_TIMEZONE

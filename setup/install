@@ -8,7 +8,8 @@ fi
 
 echo Installing project $1...
 
-ddev config --project-name=$1
+cp .env.example .env &&
+ddev config --project-name=$1 &&
 ddev start &&
 ddev composer install &&
 ddev craft db/restore setup/seed.sql.zip --interactive=0 &&
