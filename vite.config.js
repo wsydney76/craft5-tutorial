@@ -1,4 +1,3 @@
-import path from 'path';
 import tailwindcss from '@tailwindcss/vite';
 
 // https://vitejs.dev/config/
@@ -15,21 +14,21 @@ export default ({ command }) => {
             manifest: true,
 
             // Don't rely on 'assets' as the default value for 'assetsDir' like this:
-            // outDir: path.resolve(__dirname, 'web/dist/'),
+            // outDir: 'web/dist/',
             // because it will delete other directories in the 'outDir' directory on vite build, like image transforms.
 
-            outDir: path.resolve(__dirname, 'web/dist/assets/'),
+            outDir: 'web/dist/assets/',
             assetsDir: './',
             rollupOptions: {
                 input: {
-                    app: path.resolve(__dirname, 'resources/js/app.js'),
+                    app: 'resources/js/app.js',
                 },
             }
         },
-        publicDir: path.resolve(__dirname, 'resources/public'),
+        publicDir: 'resources/public',
         server: {
             host: true,
-            port: 3000,
+            port: 5173,
             strictPort: true,
             allowedHosts: true,
             cors: true,
