@@ -254,11 +254,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.7.8",
+            "version": "5.7.8.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/3fea28125abcf67e0f556da9f1ee8093d58e3641",
-                "reference": "3fea28125abcf67e0f556da9f1ee8093d58e3641",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/67ca5880c6e9cb1f42a0161629d89601a33bf730",
+                "reference": "67ca5880c6e9cb1f42a0161629d89601a33bf730",
                 "shasum": ""
             },
             "require": {
@@ -355,7 +355,7 @@
                 "docs": "https://craftcms.com/docs/5.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2025-05-28T18:48:09+00:00"
+            "time": "2025-05-30T00:16:35+00:00"
         },
         {
             "name": "craftcms/plugin-installer",
@@ -6738,17 +6738,17 @@
     "packages-dev": [
         {
             "name": "craftcms/generator",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/generator/zipball/4ccc62474698905c252c3ddb3352c0a63fae9765",
-                "reference": "4ccc62474698905c252c3ddb3352c0a63fae9765",
+                "url": "https://api.github.com/repos/craftcms/generator/zipball/24be47edbf77b5b34302173c9c33e85e1b2202e5",
+                "reference": "24be47edbf77b5b34302173c9c33e85e1b2202e5",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^5.0.0-beta.1",
                 "nette/php-generator": "^4.0",
-                "nikic/php-parser": "^4.15",
+                "nikic/php-parser": "^5.0",
                 "php": "^8.2"
             },
             "type": "yii2-extension",
@@ -6782,7 +6782,7 @@
                 "source": "https://github.com/craftcms/generator",
                 "rss": "https://github.com/craftcms/generator/releases.atom"
             },
-            "time": "2024-06-19T14:43:28+00:00"
+            "time": "2025-05-29T18:12:44+00:00"
         },
         {
             "name": "nette/php-generator",
@@ -6941,16 +6941,18 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.19.4",
+            "version": "v5.4.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/715f4d25e225bc47b293a8b997fe6ce99bf987d2",
-                "reference": "715f4d25e225bc47b293a8b997fe6ce99bf987d2",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/447a020a1f875a434d62f2a401f53b82a396e494",
+                "reference": "447a020a1f875a434d62f2a401f53b82a396e494",
                 "shasum": ""
             },
             "require": {
+                "ext-ctype": "*",
+                "ext-json": "*",
                 "ext-tokenizer": "*",
-                "php": ">=7.1"
+                "php": ">=7.4"
             },
             "bin": [
                 "bin/php-parse"
@@ -6958,7 +6960,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.9-dev"
+                    "dev-master": "5.0-dev"
                 }
             },
             "autoload": {
@@ -6979,7 +6981,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2024-09-29T15:01:53+00:00"
+            "time": "2024-12-30T11:07:19+00:00"
         },
         {
             "name": "psy/psysh",
