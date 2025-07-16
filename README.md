@@ -1,3 +1,7 @@
+Provisionally updated to recent versions of Craft (5.8) and Tailwind (4.1).
+
+Just for reference, see craft5-basic or craft5-boilerplate for a more recent Craft 5 starter.
+
 # Craft 5 Solo - Tutorial
 
 This tutorial/workshop started as a pure Craft CMS starter as provided in the craftcms/craft package with 
