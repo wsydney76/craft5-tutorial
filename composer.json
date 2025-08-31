@@ -46,6 +46,10 @@
     {
       "type": "path",
       "url": "/var/www/plugins/extras"
+    },
+    {
+      "type": "path",
+      "url": "/var/www/plugins/elementmap"
     }
   ]
 }

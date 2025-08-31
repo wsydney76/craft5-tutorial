@@ -1,4 +1,6 @@
 #!/bin/bash
 
 ddev composer require wsydney76/extras &&
-ddev craft plugin/install _extras
+ddev craft plugin/install _extras &&
+ddev composer require wsydney76/craft-elementmap5 &&
+ddev craft plugin/install _elementmap
